@@ -1,0 +1,67 @@
+name: ATLAS — peiling & publicatie
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"      # elke maandag 06:00 UTC
+  workflow_dispatch:          # of handmatig via de Actions-tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # --- 1. data ophalen en scores berekenen (Python) ---
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Python-pakketten installeren
+        run: pip install -r requirements.txt
+
+      - name: ATLAS draaien en atlas_data.json exporteren
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}   # Settings > Secrets > Actions
+        run: |
+          mkdir -p public
+          python atlas_export.py --fetch -o public/atlas_data.json
+
+      # --- 2. frontend bouwen ---
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          
+
+      - name: Frontend bouwen
+        run: |
+          npm install
+          npm run build
+          cp public/atlas_data.json dist/atlas_data.json
+
+      # --- 3. publiceren ---
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

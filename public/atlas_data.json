@@ -1,0 +1,6847 @@
+{
+ "generated": "2026-07-14T12:20:14",
+ "validation": {
+  "auc": 1.0,
+  "per_crisis": [
+   {
+    "date": "1987-08",
+    "label": "Black Monday",
+    "auc": 0.8
+   },
+   {
+    "date": "2000-03",
+    "label": "Dotcom",
+    "auc": 1.0
+   },
+   {
+    "date": "2007-10",
+    "label": "Kredietcrisis",
+    "auc": 0.9
+   },
+   {
+    "date": "2022-01",
+    "label": "Rente/inflatie-reset",
+    "auc": 0.8
+   }
+  ],
+  "pct_boven_60": 0.148,
+  "false_positives": 0
+ },
+ "jst": {
+  "auc_streng": 0.68,
+  "auc_vs_insample": 0.904,
+  "landen": 18,
+  "landjaren": 1997,
+  "crises": 61,
+  "basisrate": 0.06,
+  "drempels": [
+   {
+    "band": "0-40",
+    "j3": 0.05,
+    "j5": 0.11,
+    "j10": 0.19,
+    "jaren": 619
+   },
+   {
+    "band": "40-60",
+    "j3": 0.06,
+    "j5": 0.11,
+    "j10": 0.23,
+    "jaren": 833
+   },
+   {
+    "band": "60-70",
+    "j3": 0.12,
+    "j5": 0.2,
+    "j10": 0.31,
+    "jaren": 298
+   },
+   {
+    "band": "70-80",
+    "j3": 0.22,
+    "j5": 0.26,
+    "j10": 0.45,
+    "jaren": 186
+   },
+   {
+    "band": "80-100",
+    "j3": 0.33,
+    "j5": 0.43,
+    "j10": 0.54,
+    "jaren": 61
+   }
+  ],
+  "alle_jaren": {
+   "j3": 0.09,
+   "j5": 0.15,
+   "j10": 0.26,
+   "jaren": 1997
+  },
+  "mediaan_percentiel": 82
+ },
+ "bronnen": [
+  {
+   "naam": "FRED (Federal Reserve Bank of St. Louis)",
+   "wat": "krediet, geldhoeveelheid, rente, huizenprijzen, margin debt, aandelenallocatie, consumentenvertrouwen",
+   "url": "https://fred.stlouisfed.org"
+  },
+  {
+   "naam": "Robert Shiller, Yale",
+   "wat": "CAPE, Excess CAPE Yield, reele koers en totaalrendement sinds 1871",
+   "url": "https://shillerdata.com"
+  },
+  {
+   "naam": "Jorda-Schularick-Taylor Macrohistory Database",
+   "wat": "18 landen, 1870-2020, 61 bankencrises - hiermee is ATLAS-KREDIET out-of-sample getoetst",
+   "url": "https://www.macrohistory.net/database/"
+  },
+  {
+   "naam": "BIS",
+   "wat": "credit-to-GDP (via FRED)",
+   "url": "https://www.bis.org/statistics/"
+  }
+ ],
+ "zeepbel": {
+  "waardering": 84.1,
+  "meltup": 65.9,
+  "combinatie": 74.4,
+  "datum": "2026-07-31",
+  "indicatoren": [
+   {
+    "naam": "Shiller CAPE",
+    "stand": 97.0,
+    "weging": 0.25
+   },
+   {
+    "naam": "Excess CAPE Yield",
+    "stand": 82.0,
+    "weging": 0.2
+   },
+   {
+    "naam": "Beurswaarde / BBP (Buffett)",
+    "stand": 62.0,
+    "weging": 0.2
+   },
+   {
+    "naam": "Margin debt / BBP",
+    "stand": 84.0,
+    "weging": 0.2
+   },
+   {
+    "naam": "Aandelenallocatie huishoudens",
+    "stand": 94.0,
+    "weging": 0.15
+   }
+  ],
+  "rendement": {
+   "j10": [
+    {
+     "band": "0-40",
+     "mediaan": 9.1,
+     "slechtste": -1.2,
+     "beste": 14.3,
+     "kans_verlies": 0.06,
+     "maanden": 107
+    },
+    {
+     "band": "40-60",
+     "mediaan": 10.3,
+     "slechtste": -4.0,
+     "beste": 14.6,
+     "kans_verlies": 0.11,
+     "maanden": 153
+    },
+    {
+     "band": "60-80",
+     "mediaan": 5.9,
+     "slechtste": -4.0,
+     "beste": 16.1,
+     "kans_verlies": 0.21,
+     "maanden": 325
+    },
+    {
+     "band": "80-100",
+     "mediaan": 0.8,
+     "slechtste": -5.9,
+     "beste": 9.4,
+     "kans_verlies": 0.41,
+     "maanden": 87
+    }
+   ],
+   "j5": [
+    {
+     "band": "0-40",
+     "mediaan": 5.8,
+     "slechtste": -3.4,
+     "beste": 25.7,
+     "kans_verlies": 0.26,
+     "maanden": 107
+    },
+    {
+     "band": "40-60",
+     "mediaan": 11.1,
+     "slechtste": -8.1,
+     "beste": 23.6,
+     "kans_verlies": 0.25,
+     "maanden": 153
+    },
+    {
+     "band": "60-80",
+     "mediaan": 7.6,
+     "slechtste": -9.0,
+     "beste": 23.1,
+     "kans_verlies": 0.18,
+     "maanden": 383
+    },
+    {
+     "band": "80-100",
+     "mediaan": -1.4,
+     "slechtste": -5.8,
+     "beste": 25.1,
+     "kans_verlies": 0.58,
+     "maanden": 89
+    }
+   ]
+  },
+  "crashes": [
+   "1901-06",
+   "1906-09",
+   "1915-12",
+   "1919-07",
+   "1929-09",
+   "1937-02",
+   "1940-04",
+   "1946-04",
+   "1968-12",
+   "1973-01",
+   "2000-08",
+   "2007-10"
+  ],
+  "gevalideerd": false
+ },
+ "euforie": {
+  "score": 81.5,
+  "datum": "2026-03-31",
+  "componenten": [
+   {
+    "naam": "Margin debt / BBP",
+    "stand": 90.0,
+    "weging": 0.35
+   },
+   {
+    "naam": "Aandelenallocatie huishoudens",
+    "stand": 75.0,
+    "weging": 0.25
+   },
+   {
+    "naam": "Waardering (CAPE + ECY)",
+    "stand": 84.0,
+    "weging": 0.25
+   },
+   {
+    "naam": "Koersversnelling",
+    "stand": 68.0,
+    "weging": 0.15
+   }
+  ],
+  "traject": [
+   {
+    "jaar": 1980,
+    "score": 72.6
+   },
+   {
+    "jaar": 1981,
+    "score": 71.4
+   },
+   {
+    "jaar": 1982,
+    "score": 65.0
+   },
+   {
+    "jaar": 1983,
+    "score": 79.1
+   },
+   {
+    "jaar": 1984,
+    "score": 75.2
+   },
+   {
+    "jaar": 1985,
+    "score": 80.4
+   },
+   {
+    "jaar": 1986,
+    "score": 83.4
+   },
+   {
+    "jaar": 1987,
+    "score": 88.1
+   },
+   {
+    "jaar": 1988,
+    "score": 58.1
+   },
+   {
+    "jaar": 1989,
+    "score": 63.7
+   },
+   {
+    "jaar": 1990,
+    "score": 58.8
+   },
+   {
+    "jaar": 1991,
+    "score": 79.9
+   },
+   {
+    "jaar": 1992,
+    "score": 83.5
+   },
+   {
+    "jaar": 1993,
+    "score": 84.4
+   },
+   {
+    "jaar": 1994,
+    "score": 84.7
+   },
+   {
+    "jaar": 1995,
+    "score": 86.6
+   },
+   {
+    "jaar": 1996,
+    "score": 91.8
+   },
+   {
+    "jaar": 1997,
+    "score": 97.8
+   },
+   {
+    "jaar": 1998,
+    "score": 97.9
+   },
+   {
+    "jaar": 1999,
+    "score": 94.7
+   },
+   {
+    "jaar": 2000,
+    "score": 93.5
+   },
+   {
+    "jaar": 2001,
+    "score": 73.9
+   },
+   {
+    "jaar": 2002,
+    "score": 45.4
+   },
+   {
+    "jaar": 2003,
+    "score": 59.3
+   },
+   {
+    "jaar": 2004,
+    "score": 54.9
+   },
+   {
+    "jaar": 2005,
+    "score": 53.7
+   },
+   {
+    "jaar": 2006,
+    "score": 60.0
+   },
+   {
+    "jaar": 2007,
+    "score": 74.4
+   },
+   {
+    "jaar": 2008,
+    "score": 54.7
+   },
+   {
+    "jaar": 2009,
+    "score": 28.6
+   },
+   {
+    "jaar": 2010,
+    "score": 40.1
+   },
+   {
+    "jaar": 2011,
+    "score": 53.6
+   },
+   {
+    "jaar": 2012,
+    "score": 40.2
+   },
+   {
+    "jaar": 2013,
+    "score": 59.1
+   },
+   {
+    "jaar": 2014,
+    "score": 68.4
+   },
+   {
+    "jaar": 2015,
+    "score": 61.9
+   },
+   {
+    "jaar": 2016,
+    "score": 52.8
+   },
+   {
+    "jaar": 2017,
+    "score": 74.7
+   },
+   {
+    "jaar": 2018,
+    "score": 76.6
+   },
+   {
+    "jaar": 2019,
+    "score": 65.7
+   },
+   {
+    "jaar": 2020,
+    "score": 83.3
+   },
+   {
+    "jaar": 2021,
+    "score": 89.4
+   },
+   {
+    "jaar": 2022,
+    "score": 84.5
+   },
+   {
+    "jaar": 2023,
+    "score": 56.2
+   },
+   {
+    "jaar": 2024,
+    "score": 80.8
+   },
+   {
+    "jaar": 2025,
+    "score": 84.4
+   },
+   {
+    "jaar": 2026,
+    "score": 84.9
+   }
+  ],
+  "payoff": [
+   {
+    "band": "0-40",
+    "mediaan": 11.1,
+    "slechtste": 1.7,
+    "kans_verlies": 0.0,
+    "maanden": 77
+   },
+   {
+    "band": "40-60",
+    "mediaan": 9.8,
+    "slechtste": -0.5,
+    "kans_verlies": 0.01,
+    "maanden": 152
+   },
+   {
+    "band": "60-75",
+    "mediaan": 10.4,
+    "slechtste": -1.1,
+    "kans_verlies": 0.04,
+    "maanden": 75
+   },
+   {
+    "band": "75-90",
+    "mediaan": 8.6,
+    "slechtste": -3.5,
+    "kans_verlies": 0.06,
+    "maanden": 89
+   },
+   {
+    "band": "90-100",
+    "mediaan": 0.4,
+    "slechtste": -5.9,
+    "kans_verlies": 0.49,
+    "maanden": 45
+   }
+  ],
+  "top": [
+   {
+    "maand": "1998-04",
+    "score": 97.9
+   },
+   {
+    "maand": "1997-09",
+    "score": 97.8
+   },
+   {
+    "maand": "1998-03",
+    "score": 97.2
+   },
+   {
+    "maand": "1997-10",
+    "score": 97.1
+   },
+   {
+    "maand": "1998-05",
+    "score": 96.8
+   },
+   {
+    "maand": "1997-07",
+    "score": 96.3
+   },
+   {
+    "maand": "1997-08",
+    "score": 96.2
+   },
+   {
+    "maand": "1997-11",
+    "score": 95.7
+   }
+  ]
+ },
+ "current": {
+  "score": 45.5,
+  "regime": "LATE CYCLE",
+  "date": "2026-07-31",
+  "coverage": 1.0,
+  "maanden_achterstand": 0,
+  "min_dekking": 0.7
+ },
+ "pillars": [
+  {
+   "key": "credit",
+   "label": "Krediet & Liquiditeit",
+   "weight": 0.3,
+   "score": 38.4,
+   "delta12m": -21.2
+  },
+  {
+   "key": "valuation",
+   "label": "Waardering",
+   "weight": 0.2,
+   "score": 77.2,
+   "delta12m": -2.4
+  },
+  {
+   "key": "monetary",
+   "label": "Monetair & Rente",
+   "weight": 0.2,
+   "score": 55.3,
+   "delta12m": -16.7
+  },
+  {
+   "key": "behavior",
+   "label": "Gedrag & Structuur",
+   "weight": 0.2,
+   "score": 88.8,
+   "delta12m": 7.1
+  },
+  {
+   "key": "geo",
+   "label": "Geopolitiek & Sociaal",
+   "weight": 0.1,
+   "score": 3.6,
+   "delta12m": 1.5
+  }
+ ],
+ "indicators": [
+  {
+   "name": "Credit-to-GDP gap",
+   "pillar": "credit",
+   "series_id": "CRDQUSAPABIS, QUSPAM770A",
+   "transform": "hp_gap",
+   "direction": 1,
+   "note": "BIS-gap in procentpunten. Let op: scale_ref stond op 10 (de BIS-alarmdrempel), maar de Amerikaanse gap overschrijdt die structureel. Gevolg: de indicator zat jarenlang gepind op 100 en onderscheidde niets meer - hij stond op 100 bij ALLE vijf crises EN ertussenin. Nu 20pp, zodat er weer variatie in zit.",
+   "score": 89.5,
+   "per": "2025-12-31"
+  },
+  {
+   "name": "Kredietratio, 3-jaars verandering",
+   "pillar": "credit",
+   "series_id": "CRDQUSAPABIS, QUSPAM770A",
+   "transform": "diff_z",
+   "direction": 1,
+   "note": "Momentum van de kredietratio: de snelheid, niet het niveau.",
+   "score": 29.2,
+   "per": "2025-12-31"
+  },
+  {
+   "name": "Reverse repo (RRP)",
+   "pillar": "credit",
+   "series_id": "RRPONTSYD",
+   "transform": "roll_z",
+   "direction": -1,
+   "note": "Leegloop = de liquiditeitsbuffer raakt op.",
+   "score": 81.1,
+   "per": "2026-07-31"
+  },
+  {
+   "name": "Niet-bancair krediet / BBP",
+   "pillar": "credit",
+   "series_id": "CRDQUSAPABIS",
+   "transform": "hp_gap",
+   "direction": 1,
+   "note": "Totaal privaat krediet (BIS, %BBP) MINUS bankkrediet (%BBP). Wat overblijft is de hefboom BUITEN de banken: schaduwbanken, securitisatie, private credit. In 2007 zat de crisis daar, niet op de bankbalansen - en vandaag opnieuw. Benadering: de twee bronnen tellen niet identiek, dus lees het NIVEAU niet, maar de AFWIJKING VAN DE TREND.",
+   "score": 82.8,
+   "per": "2025-12-31"
+  },
+  {
+   "name": "Reele M2-groei",
+   "pillar": "credit",
+   "series_id": "M2REAL",
+   "transform": "yoy_z",
+   "direction": 1,
+   "note": "OMGEDRAAID in v3. Eerst: krimp = gevaar (AUC 0,18 - omgekeerd). Nu: EXPANSIE = gevaar. Geldkrimp is de klap zelf, niet de waarschuwing; overvloedige liquiditeit gaat aan elke zeepbel vooraf. Zelfde logica als de kredietgap.",
+   "score": 38.4,
+   "per": "2026-05-31"
+  },
+  {
+   "name": "Fed-balans, 12-mnd",
+   "pillar": "credit",
+   "series_id": "WALCL",
+   "transform": "yoy_z",
+   "direction": 1,
+   "note": "OMGEDRAAID in v3 (AUC 0,21 - omgekeerd). QE voedt de opbouw, QT is de nasleep.",
+   "score": 54.0,
+   "per": "2026-07-31"
+  },
+  {
+   "name": "Beurswaarde / BBP (Buffett)",
+   "pillar": "valuation",
+   "series_id": "NCBEILQ027S, WILL5000INDFC",
+   "transform": "hp_gap",
+   "direction": 1,
+   "note": "Aandelen op bedrijfsbalansen (Fed Z.1) gedeeld door BBP. Historie vanaf 1945. Trendgecorrigeerd: het niveau drift seculair omhoog door globalisering en winstaandeel.",
+   "score": 62.1,
+   "per": "2026-03-31"
+  },
+  {
+   "name": "Huizenprijs / huur",
+   "pillar": "valuation",
+   "series_id": "USSTHPI, CSUSHPINSA",
+   "transform": "hp_gap",
+   "direction": 1,
+   "note": "Huizenprijsindex gedeeld door de huurindex. DE klassieke zeepbelmaatstaf voor vastgoed: kopen is duur t.o.v. huren wanneer mensen kopen om de prijsstijging, niet om het dak. FHFA-index vanaf 1975 (langer dan Case-Shiller, dat pas in 1987 begint - te kort voor een 20-jaars venster).",
+   "score": 64.6,
+   "per": "2026-03-31"
+  },
+  {
+   "name": "Huizenprijs / inkomen",
+   "pillar": "valuation",
+   "series_id": "USSTHPI, CSUSHPINSA",
+   "transform": "hp_gap",
+   "direction": 1,
+   "note": "Huizenprijs gedeeld door het reeel besteedbaar inkomen per hoofd. Meet de betaalbaarheid: als huizen sneller stijgen dan inkomens, moet de rest met krediet worden overbrugd.",
+   "score": 79.7,
+   "per": "2026-03-31"
+  },
+  {
+   "name": "High-yield spreads (OAS)",
+   "pillar": "valuation",
+   "score": null,
+   "error": "te weinig historie (3 jaar, minimaal 10)"
+  },
+  {
+   "name": "Shiller CAPE",
+   "pillar": "valuation",
+   "series_id": "CAPE",
+   "transform": "exp_pct",
+   "direction": 1,
+   "note": "Cyclisch gecorrigeerde K/W, historie vanaf 1871. Middelt de winst over 10 jaar en ontloopt zo het gebrek van forward P/E: die staat op de cyclustop juist op zijn optimistischst.",
+   "score": 97.1,
+   "per": "2026-07-31"
+  },
+  {
+   "name": "Excess CAPE Yield",
+   "pillar": "valuation",
+   "series_id": "ECY",
+   "transform": "exp_pct",
+   "direction": -1,
+   "note": "(1/CAPE) min de reele 10-jaarsrente. LAAG = duur = gevaarlijk. Corrigeert voor het renteregime, nodig om 2000 en 2026 te kunnen vergelijken.",
+   "score": 82.3,
+   "per": "2026-07-31"
+  },
+  {
+   "name": "Yield curve 10j-3m",
+   "pillar": "monetary",
+   "series_id": "T10Y3M",
+   "transform": "roll_z",
+   "direction": -1,
+   "note": "Inversie ging aan elke naoorlogse recessie vooraf.",
+   "score": 55.3,
+   "per": "2026-07-31"
+  },
+  {
+   "name": "Consumentenvertrouwen",
+   "pillar": "behavior",
+   "series_id": "UMCSENT",
+   "transform": "exp_pct",
+   "direction": 1,
+   "note": "Euforie-proxy.",
+   "score": 0.2,
+   "per": "2026-05-31"
+  },
+  {
+   "name": "Margin debt / BBP",
+   "pillar": "behavior",
+   "series_id": "BOGZ1FL663067003Q",
+   "transform": "hp_gap",
+   "direction": 1,
+   "note": "Geleend geld op de beurs (Fed Z.1, vanaf 1945). Hefboom van beleggers: piekt bij elke zeepbel. Gedeeld door BBP en trendgecorrigeerd, want het niveau drift seculair omhoog.",
+   "score": 83.9,
+   "per": "2026-03-31"
+  },
+  {
+   "name": "Aandelenallocatie huishoudens",
+   "pillar": "behavior",
+   "series_id": "BOGZ1FL153064486Q",
+   "transform": "exp_pct",
+   "direction": 1,
+   "note": "Aandelen als % van de financiele bezittingen (Fed Z.1, vanaf 1945). Volgens Philosophical Economics (2013) de sterkste bekende voorspeller van het 10-jaars aandelenrendement - sterker dan CAPE. Als iedereen al binnen is, is er niemand meer om te kopen.",
+   "score": 93.6,
+   "per": "2026-03-31"
+  },
+  {
+   "name": "Beleidsonzekerheid (EPU)",
+   "pillar": "geo",
+   "series_id": "USEPUINDXD",
+   "transform": "roll_z",
+   "direction": -1,
+   "note": "OMGEDRAAID in v3 (AUC 0,34 - omgekeerd). LAGE onzekerheid = complacency = gevaar. EPU piekt TIJDENS crises, niet ervoor. Zwakste van de drie omkeringen: hou deze in de gaten.",
+   "score": 3.6,
+   "per": "2026-07-31"
+  }
+ ],
+ "history": [
+  {
+   "date": "1976-01-31",
+   "atlas": 6.7,
+   "ruw": 41.1,
+   "credit": 75.8,
+   "valuation": 37.5,
+   "monetary": null,
+   "behavior": 7.6,
+   "geo": null
+  },
+  {
+   "date": "1976-02-29",
+   "atlas": 7.5,
+   "ruw": 42.1,
+   "credit": 77.7,
+   "valuation": 39.8,
+   "monetary": null,
+   "behavior": 7.6,
+   "geo": null
+  },
+  {
+   "date": "1976-03-31",
+   "atlas": 8.3,
+   "ruw": 43.1,
+   "credit": 73.8,
+   "valuation": 43.2,
+   "monetary": null,
+   "behavior": 12.3,
+   "geo": null
+  },
+  {
+   "date": "1976-04-30",
+   "atlas": 8.6,
+   "ruw": 43.8,
+   "credit": 74.1,
+   "valuation": 43.1,
+   "monetary": null,
+   "behavior": 12.3,
+   "geo": null
+  },
+  {
+   "date": "1976-05-31",
+   "atlas": 9.4,
+   "ruw": 44.3,
+   "credit": 72.6,
+   "valuation": 43.0,
+   "monetary": null,
+   "behavior": 12.3,
+   "geo": null
+  },
+  {
+   "date": "1976-06-30",
+   "atlas": 9.8,
+   "ruw": 44.9,
+   "credit": 70.9,
+   "valuation": 43.7,
+   "monetary": null,
+   "behavior": 18.4,
+   "geo": null
+  },
+  {
+   "date": "1976-07-31",
+   "atlas": 11.4,
+   "ruw": 45.3,
+   "credit": 70.8,
+   "valuation": 44.8,
+   "monetary": null,
+   "behavior": 18.4,
+   "geo": null
+  },
+  {
+   "date": "1976-08-31",
+   "atlas": 12.6,
+   "ruw": 45.8,
+   "credit": 71.2,
+   "valuation": 43.6,
+   "monetary": null,
+   "behavior": 18.4,
+   "geo": null
+  },
+  {
+   "date": "1976-09-30",
+   "atlas": 13.3,
+   "ruw": 46.5,
+   "credit": 72.1,
+   "valuation": 44.8,
+   "monetary": null,
+   "behavior": 21.8,
+   "geo": null
+  },
+  {
+   "date": "1976-10-31",
+   "atlas": 14.5,
+   "ruw": 47.1,
+   "credit": 73.6,
+   "valuation": 41.4,
+   "monetary": null,
+   "behavior": 21.8,
+   "geo": null
+  },
+  {
+   "date": "1976-11-30",
+   "atlas": 14.8,
+   "ruw": 47.6,
+   "credit": 75.0,
+   "valuation": 40.2,
+   "monetary": null,
+   "behavior": 21.8,
+   "geo": null
+  },
+  {
+   "date": "1976-12-31",
+   "atlas": 15.9,
+   "ruw": 48.5,
+   "credit": 76.6,
+   "valuation": 42.1,
+   "monetary": null,
+   "behavior": 29.1,
+   "geo": null
+  },
+  {
+   "date": "1977-01-31",
+   "atlas": 16.3,
+   "ruw": 49.1,
+   "credit": 76.4,
+   "valuation": 42.3,
+   "monetary": null,
+   "behavior": 29.1,
+   "geo": null
+  },
+  {
+   "date": "1977-02-28",
+   "atlas": 17.0,
+   "ruw": 49.5,
+   "credit": 73.9,
+   "valuation": 40.0,
+   "monetary": null,
+   "behavior": 29.1,
+   "geo": null
+  },
+  {
+   "date": "1977-03-31",
+   "atlas": 17.3,
+   "ruw": 49.7,
+   "credit": 75.1,
+   "valuation": 36.2,
+   "monetary": null,
+   "behavior": 27.7,
+   "geo": null
+  },
+  {
+   "date": "1977-04-30",
+   "atlas": 17.6,
+   "ruw": 49.9,
+   "credit": 73.8,
+   "valuation": 34.2,
+   "monetary": null,
+   "behavior": 27.7,
+   "geo": null
+  },
+  {
+   "date": "1977-05-31",
+   "atlas": 18.8,
+   "ruw": 50.1,
+   "credit": 73.6,
+   "valuation": 34.1,
+   "monetary": null,
+   "behavior": 27.7,
+   "geo": null
+  },
+  {
+   "date": "1977-06-30",
+   "atlas": 19.1,
+   "ruw": 50.3,
+   "credit": 75.3,
+   "valuation": 33.2,
+   "monetary": null,
+   "behavior": 33.0,
+   "geo": null
+  },
+  {
+   "date": "1977-07-31",
+   "atlas": 19.4,
+   "ruw": 50.6,
+   "credit": 75.2,
+   "valuation": 34.0,
+   "monetary": null,
+   "behavior": 33.0,
+   "geo": null
+  },
+  {
+   "date": "1977-08-31",
+   "atlas": 19.7,
+   "ruw": 50.8,
+   "credit": 74.5,
+   "valuation": 32.3,
+   "monetary": null,
+   "behavior": 33.0,
+   "geo": null
+  },
+  {
+   "date": "1977-09-30",
+   "atlas": 19.6,
+   "ruw": 50.7,
+   "credit": 75.8,
+   "valuation": 28.6,
+   "monetary": null,
+   "behavior": 29.3,
+   "geo": null
+  },
+  {
+   "date": "1977-10-31",
+   "atlas": 19.2,
+   "ruw": 50.6,
+   "credit": 74.4,
+   "valuation": 27.4,
+   "monetary": null,
+   "behavior": 29.3,
+   "geo": null
+  },
+  {
+   "date": "1977-11-30",
+   "atlas": 19.1,
+   "ruw": 50.4,
+   "credit": 72.6,
+   "valuation": 27.6,
+   "monetary": null,
+   "behavior": 29.3,
+   "geo": null
+  },
+  {
+   "date": "1977-12-31",
+   "atlas": 18.2,
+   "ruw": 50.0,
+   "credit": 75.7,
+   "valuation": 26.8,
+   "monetary": null,
+   "behavior": 29.7,
+   "geo": null
+  },
+  {
+   "date": "1978-01-31",
+   "atlas": 16.7,
+   "ruw": 49.5,
+   "credit": 74.6,
+   "valuation": 25.4,
+   "monetary": null,
+   "behavior": 29.7,
+   "geo": null
+  },
+  {
+   "date": "1978-02-28",
+   "atlas": 16.2,
+   "ruw": 49.2,
+   "credit": 74.4,
+   "valuation": 24.4,
+   "monetary": null,
+   "behavior": 29.7,
+   "geo": null
+  },
+  {
+   "date": "1978-03-31",
+   "atlas": 15.4,
+   "ruw": 49.1,
+   "credit": 75.0,
+   "valuation": 23.0,
+   "monetary": null,
+   "behavior": 37.2,
+   "geo": null
+  },
+  {
+   "date": "1978-04-30",
+   "atlas": 16.5,
+   "ruw": 49.1,
+   "credit": 74.1,
+   "valuation": 25.6,
+   "monetary": null,
+   "behavior": 37.2,
+   "geo": null
+  },
+  {
+   "date": "1978-05-31",
+   "atlas": 17.2,
+   "ruw": 49.2,
+   "credit": 72.8,
+   "valuation": 29.4,
+   "monetary": null,
+   "behavior": 37.2,
+   "geo": null
+  },
+  {
+   "date": "1978-06-30",
+   "atlas": 17.5,
+   "ruw": 49.4,
+   "credit": 74.7,
+   "valuation": 30.4,
+   "monetary": null,
+   "behavior": 46.1,
+   "geo": null
+  },
+  {
+   "date": "1978-07-31",
+   "atlas": 18.5,
+   "ruw": 49.6,
+   "credit": 73.4,
+   "valuation": 30.5,
+   "monetary": null,
+   "behavior": 46.1,
+   "geo": null
+  },
+  {
+   "date": "1978-08-31",
+   "atlas": 19.6,
+   "ruw": 49.9,
+   "credit": 72.9,
+   "valuation": 33.8,
+   "monetary": null,
+   "behavior": 46.1,
+   "geo": null
+  },
+  {
+   "date": "1978-09-30",
+   "atlas": 22.1,
+   "ruw": 50.5,
+   "credit": 72.4,
+   "valuation": 35.9,
+   "monetary": null,
+   "behavior": 50.7,
+   "geo": null
+  },
+  {
+   "date": "1978-10-31",
+   "atlas": 23.8,
+   "ruw": 51.0,
+   "credit": 71.4,
+   "valuation": 33.9,
+   "monetary": null,
+   "behavior": 50.7,
+   "geo": null
+  },
+  {
+   "date": "1978-11-30",
+   "atlas": 24.4,
+   "ruw": 51.5,
+   "credit": 71.2,
+   "valuation": 30.2,
+   "monetary": null,
+   "behavior": 50.7,
+   "geo": null
+  },
+  {
+   "date": "1978-12-31",
+   "atlas": 24.4,
+   "ruw": 51.5,
+   "credit": 71.0,
+   "valuation": 29.9,
+   "monetary": null,
+   "behavior": 31.0,
+   "geo": null
+  },
+  {
+   "date": "1979-01-31",
+   "atlas": 24.6,
+   "ruw": 51.5,
+   "credit": 69.9,
+   "valuation": 32.3,
+   "monetary": null,
+   "behavior": 31.0,
+   "geo": null
+  },
+  {
+   "date": "1979-02-28",
+   "atlas": 24.6,
+   "ruw": 51.5,
+   "credit": 68.8,
+   "valuation": 30.4,
+   "monetary": null,
+   "behavior": 31.0,
+   "geo": null
+  },
+  {
+   "date": "1979-03-31",
+   "atlas": 24.1,
+   "ruw": 51.3,
+   "credit": 69.0,
+   "valuation": 33.9,
+   "monetary": null,
+   "behavior": 28.9,
+   "geo": null
+  },
+  {
+   "date": "1979-04-30",
+   "atlas": 23.7,
+   "ruw": 51.2,
+   "credit": 69.5,
+   "valuation": 34.6,
+   "monetary": null,
+   "behavior": 28.9,
+   "geo": null
+  },
+  {
+   "date": "1979-05-31",
+   "atlas": 23.2,
+   "ruw": 50.9,
+   "credit": 68.8,
+   "valuation": 32.0,
+   "monetary": null,
+   "behavior": 28.9,
+   "geo": null
+  },
+  {
+   "date": "1979-06-30",
+   "atlas": 21.7,
+   "ruw": 50.5,
+   "credit": 69.2,
+   "valuation": 31.6,
+   "monetary": null,
+   "behavior": 37.8,
+   "geo": null
+  },
+  {
+   "date": "1979-07-31",
+   "atlas": 20.6,
+   "ruw": 50.2,
+   "credit": 69.5,
+   "valuation": 31.6,
+   "monetary": null,
+   "behavior": 37.8,
+   "geo": null
+  },
+  {
+   "date": "1979-08-31",
+   "atlas": 19.1,
+   "ruw": 49.9,
+   "credit": 69.1,
+   "valuation": 34.7,
+   "monetary": null,
+   "behavior": 37.8,
+   "geo": null
+  },
+  {
+   "date": "1979-09-30",
+   "atlas": 18.0,
+   "ruw": 49.7,
+   "credit": 68.6,
+   "valuation": 38.7,
+   "monetary": null,
+   "behavior": 45.3,
+   "geo": null
+  },
+  {
+   "date": "1979-10-31",
+   "atlas": 17.5,
+   "ruw": 49.6,
+   "credit": 68.2,
+   "valuation": 39.6,
+   "monetary": null,
+   "behavior": 45.3,
+   "geo": null
+  },
+  {
+   "date": "1979-11-30",
+   "atlas": 18.2,
+   "ruw": 49.7,
+   "credit": 70.2,
+   "valuation": 39.8,
+   "monetary": null,
+   "behavior": 45.3,
+   "geo": null
+  },
+  {
+   "date": "1979-12-31",
+   "atlas": 19.9,
+   "ruw": 49.9,
+   "credit": 69.0,
+   "valuation": 41.8,
+   "monetary": null,
+   "behavior": 31.8,
+   "geo": null
+  },
+  {
+   "date": "1980-01-31",
+   "atlas": 21.9,
+   "ruw": 50.1,
+   "credit": 68.8,
+   "valuation": 43.3,
+   "monetary": null,
+   "behavior": 31.8,
+   "geo": null
+  },
+  {
+   "date": "1980-02-29",
+   "atlas": 24.6,
+   "ruw": 50.6,
+   "credit": 69.1,
+   "valuation": 48.5,
+   "monetary": null,
+   "behavior": 31.8,
+   "geo": null
+  },
+  {
+   "date": "1980-03-31",
+   "atlas": 25.2,
+   "ruw": 50.7,
+   "credit": 67.7,
+   "valuation": 40.9,
+   "monetary": null,
+   "behavior": 28.2,
+   "geo": null
+  },
+  {
+   "date": "1980-04-30",
+   "atlas": 24.7,
+   "ruw": 50.6,
+   "credit": 67.1,
+   "valuation": 36.9,
+   "monetary": null,
+   "behavior": 28.2,
+   "geo": null
+  },
+  {
+   "date": "1980-05-31",
+   "atlas": 24.3,
+   "ruw": 50.6,
+   "credit": 67.2,
+   "valuation": 32.6,
+   "monetary": null,
+   "behavior": 28.2,
+   "geo": null
+  },
+  {
+   "date": "1980-06-30",
+   "atlas": 25.9,
+   "ruw": 50.7,
+   "credit": 66.7,
+   "valuation": 40.8,
+   "monetary": null,
+   "behavior": 37.0,
+   "geo": null
+  },
+  {
+   "date": "1980-07-31",
+   "atlas": 26.9,
+   "ruw": 51.0,
+   "credit": 68.2,
+   "valuation": 45.7,
+   "monetary": null,
+   "behavior": 37.0,
+   "geo": null
+  },
+  {
+   "date": "1980-08-31",
+   "atlas": 28.1,
+   "ruw": 51.3,
+   "credit": 69.2,
+   "valuation": 48.7,
+   "monetary": null,
+   "behavior": 37.0,
+   "geo": null
+  },
+  {
+   "date": "1980-09-30",
+   "atlas": 30.1,
+   "ruw": 51.7,
+   "credit": 68.2,
+   "valuation": 57.6,
+   "monetary": null,
+   "behavior": 43.0,
+   "geo": null
+  },
+  {
+   "date": "1980-10-31",
+   "atlas": 30.6,
+   "ruw": 52.1,
+   "credit": 69.4,
+   "valuation": 59.5,
+   "monetary": null,
+   "behavior": 43.0,
+   "geo": null
+  },
+  {
+   "date": "1980-11-30",
+   "atlas": 31.2,
+   "ruw": 52.6,
+   "credit": 70.0,
+   "valuation": 62.0,
+   "monetary": null,
+   "behavior": 43.0,
+   "geo": null
+  },
+  {
+   "date": "1980-12-31",
+   "atlas": 32.1,
+   "ruw": 53.8,
+   "credit": 69.4,
+   "valuation": 64.8,
+   "monetary": null,
+   "behavior": 56.9,
+   "geo": null
+  },
+  {
+   "date": "1981-01-31",
+   "atlas": 32.7,
+   "ruw": 54.9,
+   "credit": 69.9,
+   "valuation": 64.1,
+   "monetary": null,
+   "behavior": 56.9,
+   "geo": null
+  },
+  {
+   "date": "1981-02-28",
+   "atlas": 33.2,
+   "ruw": 55.9,
+   "credit": 70.6,
+   "valuation": 62.7,
+   "monetary": null,
+   "behavior": 56.9,
+   "geo": null
+  },
+  {
+   "date": "1981-03-31",
+   "atlas": 34.1,
+   "ruw": 56.9,
+   "credit": 71.1,
+   "valuation": 62.2,
+   "monetary": null,
+   "behavior": 43.7,
+   "geo": null
+  },
+  {
+   "date": "1981-04-30",
+   "atlas": 34.6,
+   "ruw": 58.1,
+   "credit": 73.5,
+   "valuation": 62.8,
+   "monetary": null,
+   "behavior": 43.7,
+   "geo": null
+  },
+  {
+   "date": "1981-05-31",
+   "atlas": 35.5,
+   "ruw": 59.4,
+   "credit": 73.4,
+   "valuation": 61.7,
+   "monetary": null,
+   "behavior": 43.7,
+   "geo": null
+  },
+  {
+   "date": "1981-06-30",
+   "atlas": 36.1,
+   "ruw": 60.2,
+   "credit": 72.5,
+   "valuation": 59.8,
+   "monetary": null,
+   "behavior": 43.8,
+   "geo": null
+  },
+  {
+   "date": "1981-07-31",
+   "atlas": 36.3,
+   "ruw": 60.8,
+   "credit": 70.5,
+   "valuation": 59.7,
+   "monetary": null,
+   "behavior": 43.8,
+   "geo": null
+  },
+  {
+   "date": "1981-08-31",
+   "atlas": 36.8,
+   "ruw": 61.2,
+   "credit": 70.1,
+   "valuation": 60.2,
+   "monetary": null,
+   "behavior": 43.8,
+   "geo": null
+  },
+  {
+   "date": "1981-09-30",
+   "atlas": 36.0,
+   "ruw": 60.6,
+   "credit": 68.3,
+   "valuation": 48.0,
+   "monetary": null,
+   "behavior": 26.1,
+   "geo": null
+  },
+  {
+   "date": "1981-10-31",
+   "atlas": 35.6,
+   "ruw": 60.0,
+   "credit": 70.2,
+   "valuation": 47.9,
+   "monetary": null,
+   "behavior": 26.1,
+   "geo": null
+  },
+  {
+   "date": "1981-11-30",
+   "atlas": 34.5,
+   "ruw": 59.2,
+   "credit": 71.2,
+   "valuation": 44.8,
+   "monetary": null,
+   "behavior": 26.1,
+   "geo": null
+  },
+  {
+   "date": "1981-12-31",
+   "atlas": 34.4,
+   "ruw": 58.5,
+   "credit": 71.4,
+   "valuation": 51.1,
+   "monetary": null,
+   "behavior": 38.8,
+   "geo": null
+  },
+  {
+   "date": "1982-01-31",
+   "atlas": 33.6,
+   "ruw": 57.9,
+   "credit": 72.8,
+   "valuation": 51.1,
+   "monetary": null,
+   "behavior": 38.8,
+   "geo": null
+  },
+  {
+   "date": "1982-02-28",
+   "atlas": 33.2,
+   "ruw": 57.2,
+   "credit": 72.9,
+   "valuation": 49.3,
+   "monetary": null,
+   "behavior": 38.8,
+   "geo": null
+  },
+  {
+   "date": "1982-03-31",
+   "atlas": 32.2,
+   "ruw": 56.1,
+   "credit": 71.2,
+   "valuation": 42.1,
+   "monetary": null,
+   "behavior": 15.9,
+   "geo": null
+  },
+  {
+   "date": "1982-04-30",
+   "atlas": 30.8,
+   "ruw": 54.9,
+   "credit": 70.9,
+   "valuation": 43.3,
+   "monetary": null,
+   "behavior": 15.9,
+   "geo": null
+  },
+  {
+   "date": "1982-05-31",
+   "atlas": 30.4,
+   "ruw": 53.7,
+   "credit": 71.1,
+   "valuation": 42.5,
+   "monetary": null,
+   "behavior": 15.9,
+   "geo": null
+  },
+  {
+   "date": "1982-06-30",
+   "atlas": 29.3,
+   "ruw": 52.4,
+   "credit": 68.6,
+   "valuation": 41.2,
+   "monetary": null,
+   "behavior": 15.0,
+   "geo": null
+  },
+  {
+   "date": "1982-07-31",
+   "atlas": 25.5,
+   "ruw": 51.2,
+   "credit": 69.0,
+   "valuation": 39.8,
+   "monetary": null,
+   "behavior": 15.0,
+   "geo": null
+  },
+  {
+   "date": "1982-08-31",
+   "atlas": 18.2,
+   "ruw": 49.9,
+   "credit": 70.0,
+   "valuation": 35.7,
+   "monetary": null,
+   "behavior": 15.0,
+   "geo": null
+  },
+  {
+   "date": "1982-09-30",
+   "atlas": 17.2,
+   "ruw": 49.9,
+   "credit": 69.0,
+   "valuation": 45.6,
+   "monetary": null,
+   "behavior": 26.2,
+   "geo": null
+  },
+  {
+   "date": "1982-10-31",
+   "atlas": 16.8,
+   "ruw": 49.7,
+   "credit": 68.2,
+   "valuation": 44.3,
+   "monetary": null,
+   "behavior": 26.2,
+   "geo": null
+  },
+  {
+   "date": "1982-11-30",
+   "atlas": 16.1,
+   "ruw": 49.6,
+   "credit": 69.1,
+   "valuation": 45.4,
+   "monetary": null,
+   "behavior": 26.2,
+   "geo": null
+  },
+  {
+   "date": "1982-12-31",
+   "atlas": 20.1,
+   "ruw": 50.0,
+   "credit": 69.3,
+   "valuation": 55.8,
+   "monetary": null,
+   "behavior": 50.3,
+   "geo": null
+  },
+  {
+   "date": "1983-01-31",
+   "atlas": 22.2,
+   "ruw": 50.4,
+   "credit": 72.8,
+   "valuation": 57.6,
+   "monetary": null,
+   "behavior": 50.3,
+   "geo": null
+  },
+  {
+   "date": "1983-02-28",
+   "atlas": 26.5,
+   "ruw": 51.0,
+   "credit": 76.1,
+   "valuation": 59.3,
+   "monetary": null,
+   "behavior": 50.3,
+   "geo": null
+  },
+  {
+   "date": "1983-03-31",
+   "atlas": 31.6,
+   "ruw": 52.8,
+   "credit": 81.5,
+   "valuation": 62.6,
+   "monetary": null,
+   "behavior": 55.2,
+   "geo": null
+  },
+  {
+   "date": "1983-04-30",
+   "atlas": 33.0,
+   "ruw": 54.6,
+   "credit": 80.2,
+   "valuation": 63.8,
+   "monetary": null,
+   "behavior": 55.2,
+   "geo": null
+  },
+  {
+   "date": "1983-05-31",
+   "atlas": 35.4,
+   "ruw": 56.4,
+   "credit": 81.2,
+   "valuation": 65.3,
+   "monetary": null,
+   "behavior": 55.2,
+   "geo": null
+  },
+  {
+   "date": "1983-06-30",
+   "atlas": 38.0,
+   "ruw": 58.8,
+   "credit": 83.6,
+   "valuation": 69.4,
+   "monetary": null,
+   "behavior": 65.3,
+   "geo": null
+  },
+  {
+   "date": "1983-07-31",
+   "atlas": 41.2,
+   "ruw": 61.3,
+   "credit": 84.0,
+   "valuation": 70.9,
+   "monetary": null,
+   "behavior": 65.3,
+   "geo": null
+  },
+  {
+   "date": "1983-08-31",
+   "atlas": 42.6,
+   "ruw": 63.8,
+   "credit": 83.4,
+   "valuation": 70.5,
+   "monetary": null,
+   "behavior": 65.3,
+   "geo": null
+  },
+  {
+   "date": "1983-09-30",
+   "atlas": 43.7,
+   "ruw": 65.8,
+   "credit": 83.5,
+   "valuation": 69.8,
+   "monetary": null,
+   "behavior": 64.2,
+   "geo": null
+  },
+  {
+   "date": "1983-10-31",
+   "atlas": 45.0,
+   "ruw": 67.9,
+   "credit": 83.8,
+   "valuation": 69.6,
+   "monetary": null,
+   "behavior": 64.2,
+   "geo": null
+  },
+  {
+   "date": "1983-11-30",
+   "atlas": 46.1,
+   "ruw": 69.8,
+   "credit": 82.6,
+   "valuation": 69.2,
+   "monetary": null,
+   "behavior": 64.2,
+   "geo": null
+  },
+  {
+   "date": "1983-12-31",
+   "atlas": 47.2,
+   "ruw": 70.8,
+   "credit": 82.8,
+   "valuation": 67.3,
+   "monetary": null,
+   "behavior": 61.3,
+   "geo": null
+  },
+  {
+   "date": "1984-01-31",
+   "atlas": 47.6,
+   "ruw": 71.6,
+   "credit": 79.3,
+   "valuation": 67.3,
+   "monetary": null,
+   "behavior": 61.3,
+   "geo": null
+  },
+  {
+   "date": "1984-02-29",
+   "atlas": 48.1,
+   "ruw": 72.0,
+   "credit": 77.2,
+   "valuation": 64.9,
+   "monetary": null,
+   "behavior": 61.3,
+   "geo": null
+  },
+  {
+   "date": "1984-03-31",
+   "atlas": 47.6,
+   "ruw": 71.7,
+   "credit": 78.2,
+   "valuation": 63.6,
+   "monetary": null,
+   "behavior": 48.9,
+   "geo": null
+  },
+  {
+   "date": "1984-04-30",
+   "atlas": 47.2,
+   "ruw": 71.5,
+   "credit": 78.8,
+   "valuation": 63.9,
+   "monetary": null,
+   "behavior": 48.9,
+   "geo": null
+  },
+  {
+   "date": "1984-05-31",
+   "atlas": 47.1,
+   "ruw": 71.3,
+   "credit": 78.8,
+   "valuation": 64.5,
+   "monetary": null,
+   "behavior": 48.9,
+   "geo": null
+  },
+  {
+   "date": "1984-06-30",
+   "atlas": 46.0,
+   "ruw": 70.5,
+   "credit": 80.8,
+   "valuation": 61.2,
+   "monetary": null,
+   "behavior": 43.9,
+   "geo": null
+  },
+  {
+   "date": "1984-07-31",
+   "atlas": 45.0,
+   "ruw": 69.6,
+   "credit": 80.4,
+   "valuation": 60.0,
+   "monetary": null,
+   "behavior": 43.9,
+   "geo": null
+  },
+  {
+   "date": "1984-08-31",
+   "atlas": 44.3,
+   "ruw": 68.8,
+   "credit": 80.2,
+   "valuation": 62.7,
+   "monetary": null,
+   "behavior": 43.9,
+   "geo": null
+  },
+  {
+   "date": "1984-09-30",
+   "atlas": 44.2,
+   "ruw": 68.0,
+   "credit": 81.3,
+   "valuation": 64.7,
+   "monetary": null,
+   "behavior": 38.4,
+   "geo": null
+  },
+  {
+   "date": "1984-10-31",
+   "atlas": 43.2,
+   "ruw": 67.1,
+   "credit": 81.1,
+   "valuation": 63.4,
+   "monetary": null,
+   "behavior": 38.4,
+   "geo": null
+  },
+  {
+   "date": "1984-11-30",
+   "atlas": 42.5,
+   "ruw": 66.3,
+   "credit": 82.1,
+   "valuation": 62.6,
+   "monetary": null,
+   "behavior": 38.4,
+   "geo": null
+  },
+  {
+   "date": "1984-12-31",
+   "atlas": 41.8,
+   "ruw": 65.6,
+   "credit": 85.9,
+   "valuation": 54.1,
+   "monetary": null,
+   "behavior": 40.6,
+   "geo": null
+  },
+  {
+   "date": "1985-01-31",
+   "atlas": 41.7,
+   "ruw": 65.1,
+   "credit": 87.5,
+   "valuation": 55.8,
+   "monetary": null,
+   "behavior": 40.6,
+   "geo": null
+  },
+  {
+   "date": "1985-02-28",
+   "atlas": 41.0,
+   "ruw": 64.8,
+   "credit": 87.4,
+   "valuation": 57.4,
+   "monetary": null,
+   "behavior": 40.6,
+   "geo": null
+  },
+  {
+   "date": "1985-03-31",
+   "atlas": 40.9,
+   "ruw": 64.8,
+   "credit": 88.0,
+   "valuation": 59.3,
+   "monetary": null,
+   "behavior": 38.0,
+   "geo": null
+  },
+  {
+   "date": "1985-04-30",
+   "atlas": 40.7,
+   "ruw": 64.8,
+   "credit": 87.7,
+   "valuation": 58.5,
+   "monetary": null,
+   "behavior": 38.0,
+   "geo": null
+  },
+  {
+   "date": "1985-05-31",
+   "atlas": 40.6,
+   "ruw": 64.7,
+   "credit": 87.8,
+   "valuation": 58.3,
+   "monetary": null,
+   "behavior": 38.0,
+   "geo": null
+  },
+  {
+   "date": "1985-06-30",
+   "atlas": 42.5,
+   "ruw": 65.2,
+   "credit": 88.9,
+   "valuation": 58.7,
+   "monetary": null,
+   "behavior": 55.2,
+   "geo": null
+  },
+  {
+   "date": "1985-07-31",
+   "atlas": 42.9,
+   "ruw": 65.8,
+   "credit": 89.8,
+   "valuation": 59.7,
+   "monetary": null,
+   "behavior": 55.2,
+   "geo": null
+  },
+  {
+   "date": "1985-08-31",
+   "atlas": 43.7,
+   "ruw": 66.3,
+   "credit": 90.2,
+   "valuation": 58.7,
+   "monetary": null,
+   "behavior": 55.2,
+   "geo": null
+  },
+  {
+   "date": "1985-09-30",
+   "atlas": 44.1,
+   "ruw": 66.8,
+   "credit": 91.3,
+   "valuation": 56.6,
+   "monetary": null,
+   "behavior": 51.1,
+   "geo": null
+  },
+  {
+   "date": "1985-10-31",
+   "atlas": 45.1,
+   "ruw": 67.3,
+   "credit": 91.1,
+   "valuation": 56.7,
+   "monetary": null,
+   "behavior": 51.1,
+   "geo": null
+  },
+  {
+   "date": "1985-11-30",
+   "atlas": 45.5,
+   "ruw": 67.7,
+   "credit": 89.7,
+   "valuation": 58.2,
+   "monetary": null,
+   "behavior": 51.1,
+   "geo": null
+  },
+  {
+   "date": "1985-12-31",
+   "atlas": 46.5,
+   "ruw": 68.7,
+   "credit": 88.7,
+   "valuation": 62.4,
+   "monetary": null,
+   "behavior": 66.7,
+   "geo": null
+  },
+  {
+   "date": "1986-01-31",
+   "atlas": 47.5,
+   "ruw": 69.4,
+   "credit": 87.3,
+   "valuation": 62.3,
+   "monetary": null,
+   "behavior": 66.7,
+   "geo": null
+  },
+  {
+   "date": "1986-02-28",
+   "atlas": 48.5,
+   "ruw": 70.2,
+   "credit": 87.9,
+   "valuation": 63.4,
+   "monetary": null,
+   "behavior": 66.7,
+   "geo": null
+  },
+  {
+   "date": "1986-03-31",
+   "atlas": 50.0,
+   "ruw": 71.2,
+   "credit": 90.0,
+   "valuation": 66.2,
+   "monetary": null,
+   "behavior": 68.0,
+   "geo": null
+  },
+  {
+   "date": "1986-04-30",
+   "atlas": 52.1,
+   "ruw": 72.2,
+   "credit": 91.8,
+   "valuation": 66.1,
+   "monetary": null,
+   "behavior": 68.0,
+   "geo": null
+  },
+  {
+   "date": "1986-05-31",
+   "atlas": 53.0,
+   "ruw": 73.3,
+   "credit": 92.3,
+   "valuation": 66.6,
+   "monetary": null,
+   "behavior": 68.0,
+   "geo": null
+  },
+  {
+   "date": "1986-06-30",
+   "atlas": 54.5,
+   "ruw": 73.9,
+   "credit": 91.9,
+   "valuation": 67.9,
+   "monetary": null,
+   "behavior": 68.2,
+   "geo": null
+  },
+  {
+   "date": "1986-07-31",
+   "atlas": 55.5,
+   "ruw": 74.5,
+   "credit": 92.2,
+   "valuation": 66.7,
+   "monetary": null,
+   "behavior": 68.2,
+   "geo": null
+  },
+  {
+   "date": "1986-08-31",
+   "atlas": 56.4,
+   "ruw": 75.1,
+   "credit": 92.4,
+   "valuation": 67.1,
+   "monetary": null,
+   "behavior": 68.2,
+   "geo": null
+  },
+  {
+   "date": "1986-09-30",
+   "atlas": 57.9,
+   "ruw": 75.6,
+   "credit": 92.4,
+   "valuation": 64.2,
+   "monetary": null,
+   "behavior": 65.6,
+   "geo": null
+  },
+  {
+   "date": "1986-10-31",
+   "atlas": 58.5,
+   "ruw": 76.2,
+   "credit": 93.0,
+   "valuation": 64.1,
+   "monetary": null,
+   "behavior": 65.6,
+   "geo": null
+  },
+  {
+   "date": "1986-11-30",
+   "atlas": 59.7,
+   "ruw": 76.8,
+   "credit": 93.3,
+   "valuation": 64.9,
+   "monetary": null,
+   "behavior": 65.6,
+   "geo": null
+  },
+  {
+   "date": "1986-12-31",
+   "atlas": 60.6,
+   "ruw": 77.2,
+   "credit": 93.8,
+   "valuation": 67.7,
+   "monetary": null,
+   "behavior": 67.7,
+   "geo": null
+  },
+  {
+   "date": "1987-01-31",
+   "atlas": 61.8,
+   "ruw": 77.6,
+   "credit": 93.6,
+   "valuation": 69.0,
+   "monetary": null,
+   "behavior": 67.7,
+   "geo": null
+  },
+  {
+   "date": "1987-02-28",
+   "atlas": 62.7,
+   "ruw": 78.0,
+   "credit": 92.6,
+   "valuation": 71.4,
+   "monetary": null,
+   "behavior": 67.7,
+   "geo": null
+  },
+  {
+   "date": "1987-03-31",
+   "atlas": 62.8,
+   "ruw": 78.1,
+   "credit": 88.5,
+   "valuation": 74.3,
+   "monetary": null,
+   "behavior": 69.6,
+   "geo": null
+  },
+  {
+   "date": "1987-04-30",
+   "atlas": 63.5,
+   "ruw": 78.2,
+   "credit": 86.0,
+   "valuation": 75.3,
+   "monetary": null,
+   "behavior": 69.6,
+   "geo": null
+  },
+  {
+   "date": "1987-05-31",
+   "atlas": 63.3,
+   "ruw": 78.2,
+   "credit": 84.8,
+   "valuation": 76.1,
+   "monetary": null,
+   "behavior": 69.6,
+   "geo": null
+  },
+  {
+   "date": "1987-06-30",
+   "atlas": 62.6,
+   "ruw": 78.2,
+   "credit": 82.5,
+   "valuation": 79.5,
+   "monetary": null,
+   "behavior": 69.5,
+   "geo": null
+  },
+  {
+   "date": "1987-07-31",
+   "atlas": 62.2,
+   "ruw": 78.1,
+   "credit": 81.3,
+   "valuation": 80.6,
+   "monetary": null,
+   "behavior": 69.5,
+   "geo": null
+  },
+  {
+   "date": "1987-08-31",
+   "atlas": 62.0,
+   "ruw": 78.1,
+   "credit": 80.5,
+   "valuation": 82.7,
+   "monetary": null,
+   "behavior": 69.5,
+   "geo": null
+  },
+  {
+   "date": "1987-09-30",
+   "atlas": 62.1,
+   "ruw": 78.1,
+   "credit": 79.4,
+   "valuation": 79.5,
+   "monetary": null,
+   "behavior": 70.5,
+   "geo": null
+  },
+  {
+   "date": "1987-10-31",
+   "atlas": 61.7,
+   "ruw": 78.0,
+   "credit": 79.1,
+   "valuation": 75.8,
+   "monetary": null,
+   "behavior": 70.5,
+   "geo": null
+  },
+  {
+   "date": "1987-11-30",
+   "atlas": 60.7,
+   "ruw": 77.7,
+   "credit": 78.6,
+   "valuation": 71.0,
+   "monetary": null,
+   "behavior": 70.5,
+   "geo": null
+  },
+  {
+   "date": "1987-12-31",
+   "atlas": 56.9,
+   "ruw": 76.3,
+   "credit": 76.5,
+   "valuation": 65.8,
+   "monetary": null,
+   "behavior": 36.7,
+   "geo": null
+  },
+  {
+   "date": "1988-01-31",
+   "atlas": 53.9,
+   "ruw": 74.9,
+   "credit": 76.9,
+   "valuation": 66.3,
+   "monetary": null,
+   "behavior": 36.7,
+   "geo": null
+  },
+  {
+   "date": "1988-02-29",
+   "atlas": 50.9,
+   "ruw": 73.6,
+   "credit": 78.0,
+   "valuation": 66.3,
+   "monetary": null,
+   "behavior": 36.7,
+   "geo": null
+  },
+  {
+   "date": "1988-03-31",
+   "atlas": 49.0,
+   "ruw": 72.2,
+   "credit": 77.3,
+   "valuation": 68.1,
+   "monetary": null,
+   "behavior": 33.4,
+   "geo": null
+  },
+  {
+   "date": "1988-04-30",
+   "atlas": 46.2,
+   "ruw": 70.8,
+   "credit": 77.5,
+   "valuation": 68.3,
+   "monetary": null,
+   "behavior": 33.4,
+   "geo": null
+  },
+  {
+   "date": "1988-05-31",
+   "atlas": 44.3,
+   "ruw": 69.5,
+   "credit": 77.8,
+   "valuation": 68.1,
+   "monetary": null,
+   "behavior": 33.4,
+   "geo": null
+  },
+  {
+   "date": "1988-06-30",
+   "atlas": 42.9,
+   "ruw": 68.3,
+   "credit": 78.5,
+   "valuation": 69.5,
+   "monetary": null,
+   "behavior": 35.0,
+   "geo": null
+  },
+  {
+   "date": "1988-07-31",
+   "atlas": 41.3,
+   "ruw": 67.1,
+   "credit": 78.4,
+   "valuation": 69.3,
+   "monetary": null,
+   "behavior": 35.0,
+   "geo": null
+  },
+  {
+   "date": "1988-08-31",
+   "atlas": 39.4,
+   "ruw": 65.9,
+   "credit": 78.1,
+   "valuation": 69.0,
+   "monetary": null,
+   "behavior": 35.0,
+   "geo": null
+  },
+  {
+   "date": "1988-09-30",
+   "atlas": 36.5,
+   "ruw": 64.7,
+   "credit": 76.9,
+   "valuation": 67.1,
+   "monetary": null,
+   "behavior": 35.3,
+   "geo": null
+  },
+  {
+   "date": "1988-10-31",
+   "atlas": 35.6,
+   "ruw": 63.5,
+   "credit": 76.5,
+   "valuation": 67.6,
+   "monetary": null,
+   "behavior": 35.3,
+   "geo": null
+  },
+  {
+   "date": "1988-11-30",
+   "atlas": 35.3,
+   "ruw": 62.6,
+   "credit": 77.0,
+   "valuation": 67.1,
+   "monetary": null,
+   "behavior": 35.3,
+   "geo": null
+  },
+  {
+   "date": "1988-12-31",
+   "atlas": 35.4,
+   "ruw": 62.6,
+   "credit": 75.2,
+   "valuation": 68.3,
+   "monetary": null,
+   "behavior": 38.4,
+   "geo": null
+  },
+  {
+   "date": "1989-01-31",
+   "atlas": 35.6,
+   "ruw": 62.6,
+   "credit": 74.3,
+   "valuation": 69.2,
+   "monetary": null,
+   "behavior": 38.4,
+   "geo": null
+  },
+  {
+   "date": "1989-02-28",
+   "atlas": 35.3,
+   "ruw": 62.6,
+   "credit": 73.2,
+   "valuation": 70.0,
+   "monetary": null,
+   "behavior": 38.4,
+   "geo": null
+  },
+  {
+   "date": "1989-03-31",
+   "atlas": 34.9,
+   "ruw": 62.4,
+   "credit": 72.0,
+   "valuation": 70.1,
+   "monetary": null,
+   "behavior": 30.0,
+   "geo": null
+  },
+  {
+   "date": "1989-04-30",
+   "atlas": 34.6,
+   "ruw": 62.1,
+   "credit": 71.4,
+   "valuation": 70.6,
+   "monetary": null,
+   "behavior": 30.0,
+   "geo": null
+  },
+  {
+   "date": "1989-05-31",
+   "atlas": 34.5,
+   "ruw": 61.9,
+   "credit": 70.8,
+   "valuation": 71.1,
+   "monetary": null,
+   "behavior": 30.0,
+   "geo": null
+  },
+  {
+   "date": "1989-06-30",
+   "atlas": 34.4,
+   "ruw": 61.8,
+   "credit": 71.2,
+   "valuation": 72.8,
+   "monetary": null,
+   "behavior": 39.5,
+   "geo": null
+  },
+  {
+   "date": "1989-07-31",
+   "atlas": 34.3,
+   "ruw": 61.8,
+   "credit": 71.8,
+   "valuation": 73.0,
+   "monetary": null,
+   "behavior": 39.5,
+   "geo": null
+  },
+  {
+   "date": "1989-08-31",
+   "atlas": 34.7,
+   "ruw": 61.8,
+   "credit": 73.1,
+   "valuation": 75.0,
+   "monetary": null,
+   "behavior": 39.5,
+   "geo": null
+  },
+  {
+   "date": "1989-09-30",
+   "atlas": 35.1,
+   "ruw": 62.0,
+   "credit": 72.3,
+   "valuation": 77.0,
+   "monetary": null,
+   "behavior": 38.7,
+   "geo": null
+  },
+  {
+   "date": "1989-10-31",
+   "atlas": 35.6,
+   "ruw": 62.1,
+   "credit": 72.7,
+   "valuation": 76.3,
+   "monetary": null,
+   "behavior": 38.7,
+   "geo": null
+  },
+  {
+   "date": "1989-11-30",
+   "atlas": 35.7,
+   "ruw": 62.2,
+   "credit": 72.7,
+   "valuation": 75.0,
+   "monetary": null,
+   "behavior": 38.7,
+   "geo": null
+  },
+  {
+   "date": "1989-12-31",
+   "atlas": 35.9,
+   "ruw": 62.3,
+   "credit": 72.1,
+   "valuation": 75.5,
+   "monetary": null,
+   "behavior": 36.4,
+   "geo": null
+  },
+  {
+   "date": "1990-01-31",
+   "atlas": 36.0,
+   "ruw": 62.3,
+   "credit": 71.9,
+   "valuation": 75.1,
+   "monetary": null,
+   "behavior": 36.4,
+   "geo": null
+  },
+  {
+   "date": "1990-02-28",
+   "atlas": 36.2,
+   "ruw": 62.3,
+   "credit": 72.3,
+   "valuation": 74.1,
+   "monetary": null,
+   "behavior": 36.4,
+   "geo": null
+  },
+  {
+   "date": "1990-03-31",
+   "atlas": 36.8,
+   "ruw": 62.4,
+   "credit": 73.1,
+   "valuation": 72.4,
+   "monetary": null,
+   "behavior": 30.7,
+   "geo": null
+  },
+  {
+   "date": "1990-04-30",
+   "atlas": 37.2,
+   "ruw": 62.6,
+   "credit": 74.1,
+   "valuation": 72.9,
+   "monetary": null,
+   "behavior": 30.7,
+   "geo": null
+  },
+  {
+   "date": "1990-05-31",
+   "atlas": 38.1,
+   "ruw": 62.8,
+   "credit": 74.3,
+   "valuation": 74.0,
+   "monetary": null,
+   "behavior": 30.7,
+   "geo": null
+  },
+  {
+   "date": "1990-06-30",
+   "atlas": 37.5,
+   "ruw": 62.6,
+   "credit": 71.9,
+   "valuation": 74.7,
+   "monetary": null,
+   "behavior": 29.4,
+   "geo": null
+  },
+  {
+   "date": "1990-07-31",
+   "atlas": 36.2,
+   "ruw": 62.4,
+   "credit": 70.8,
+   "valuation": 74.4,
+   "monetary": null,
+   "behavior": 29.4,
+   "geo": null
+  },
+  {
+   "date": "1990-08-31",
+   "atlas": 34.2,
+   "ruw": 61.9,
+   "credit": 69.3,
+   "valuation": 70.9,
+   "monetary": null,
+   "behavior": 29.4,
+   "geo": null
+  },
+  {
+   "date": "1990-09-30",
+   "atlas": 32.2,
+   "ruw": 60.9,
+   "credit": 67.4,
+   "valuation": 63.7,
+   "monetary": null,
+   "behavior": 18.9,
+   "geo": null
+  },
+  {
+   "date": "1990-10-31",
+   "atlas": 31.2,
+   "ruw": 59.9,
+   "credit": 66.5,
+   "valuation": 61.9,
+   "monetary": null,
+   "behavior": 18.9,
+   "geo": null
+  },
+  {
+   "date": "1990-11-30",
+   "atlas": 30.1,
+   "ruw": 58.9,
+   "credit": 66.0,
+   "valuation": 62.2,
+   "monetary": null,
+   "behavior": 18.9,
+   "geo": null
+  },
+  {
+   "date": "1990-12-31",
+   "atlas": 29.1,
+   "ruw": 58.1,
+   "credit": 64.7,
+   "valuation": 62.8,
+   "monetary": null,
+   "behavior": 26.0,
+   "geo": null
+  },
+  {
+   "date": "1991-01-31",
+   "atlas": 28.6,
+   "ruw": 57.3,
+   "credit": 65.7,
+   "valuation": 62.4,
+   "monetary": null,
+   "behavior": 26.0,
+   "geo": null
+  },
+  {
+   "date": "1991-02-28",
+   "atlas": 28.0,
+   "ruw": 56.6,
+   "credit": 66.2,
+   "valuation": 65.5,
+   "monetary": null,
+   "behavior": 26.0,
+   "geo": null
+  },
+  {
+   "date": "1991-03-31",
+   "atlas": 27.5,
+   "ruw": 56.3,
+   "credit": 65.7,
+   "valuation": 70.4,
+   "monetary": null,
+   "behavior": 29.7,
+   "geo": null
+  },
+  {
+   "date": "1991-04-30",
+   "atlas": 26.9,
+   "ruw": 55.9,
+   "credit": 65.7,
+   "valuation": 70.8,
+   "monetary": null,
+   "behavior": 29.7,
+   "geo": null
+  },
+  {
+   "date": "1991-05-31",
+   "atlas": 26.6,
+   "ruw": 55.5,
+   "credit": 65.9,
+   "valuation": 70.6,
+   "monetary": null,
+   "behavior": 29.7,
+   "geo": null
+  },
+  {
+   "date": "1991-06-30",
+   "atlas": 26.6,
+   "ruw": 55.2,
+   "credit": 65.6,
+   "valuation": 69.8,
+   "monetary": null,
+   "behavior": 29.2,
+   "geo": null
+  },
+  {
+   "date": "1991-07-31",
+   "atlas": 25.8,
+   "ruw": 54.9,
+   "credit": 65.7,
+   "valuation": 69.9,
+   "monetary": null,
+   "behavior": 29.2,
+   "geo": null
+  },
+  {
+   "date": "1991-08-31",
+   "atlas": 25.5,
+   "ruw": 54.7,
+   "credit": 65.8,
+   "valuation": 69.8,
+   "monetary": null,
+   "behavior": 29.2,
+   "geo": null
+  },
+  {
+   "date": "1991-09-30",
+   "atlas": 27.1,
+   "ruw": 55.3,
+   "credit": 64.7,
+   "valuation": 69.1,
+   "monetary": null,
+   "behavior": 43.7,
+   "geo": null
+  },
+  {
+   "date": "1991-10-31",
+   "atlas": 28.0,
+   "ruw": 56.0,
+   "credit": 65.4,
+   "valuation": 68.7,
+   "monetary": null,
+   "behavior": 43.7,
+   "geo": null
+  },
+  {
+   "date": "1991-11-30",
+   "atlas": 29.5,
+   "ruw": 56.7,
+   "credit": 65.1,
+   "valuation": 68.4,
+   "monetary": null,
+   "behavior": 43.7,
+   "geo": null
+  },
+  {
+   "date": "1991-12-31",
+   "atlas": 29.9,
+   "ruw": 57.0,
+   "credit": 62.9,
+   "valuation": 71.0,
+   "monetary": 28.5,
+   "behavior": 61.4,
+   "geo": null
+  },
+  {
+   "date": "1992-01-31",
+   "atlas": 30.1,
+   "ruw": 57.1,
+   "credit": 63.2,
+   "valuation": 72.6,
+   "monetary": 13.7,
+   "behavior": 61.4,
+   "geo": null
+  },
+  {
+   "date": "1992-02-29",
+   "atlas": 30.2,
+   "ruw": 57.1,
+   "credit": 63.0,
+   "valuation": 73.1,
+   "monetary": 17.3,
+   "behavior": 61.4,
+   "geo": null
+  },
+  {
+   "date": "1992-03-31",
+   "atlas": 29.0,
+   "ruw": 56.6,
+   "credit": 60.7,
+   "valuation": 71.2,
+   "monetary": 14.1,
+   "behavior": 53.1,
+   "geo": null
+  },
+  {
+   "date": "1992-04-30",
+   "atlas": 27.6,
+   "ruw": 55.9,
+   "credit": 60.1,
+   "valuation": 71.1,
+   "monetary": 4.4,
+   "behavior": 53.1,
+   "geo": null
+  },
+  {
+   "date": "1992-05-31",
+   "atlas": 26.8,
+   "ruw": 55.4,
+   "credit": 59.8,
+   "valuation": 71.4,
+   "monetary": 11.7,
+   "behavior": 53.1,
+   "geo": null
+  },
+  {
+   "date": "1992-06-30",
+   "atlas": 25.9,
+   "ruw": 54.9,
+   "credit": 58.0,
+   "valuation": 68.6,
+   "monetary": 13.3,
+   "behavior": 59.0,
+   "geo": null
+  },
+  {
+   "date": "1992-07-31",
+   "atlas": 24.7,
+   "ruw": 54.4,
+   "credit": 57.8,
+   "valuation": 68.3,
+   "monetary": 14.3,
+   "behavior": 59.0,
+   "geo": null
+  },
+  {
+   "date": "1992-08-31",
+   "atlas": 24.6,
+   "ruw": 54.0,
+   "credit": 58.2,
+   "valuation": 68.1,
+   "monetary": 16.5,
+   "behavior": 59.0,
+   "geo": null
+  },
+  {
+   "date": "1992-09-30",
+   "atlas": 23.6,
+   "ruw": 52.9,
+   "credit": 50.3,
+   "valuation": 68.1,
+   "monetary": 11.6,
+   "behavior": 58.2,
+   "geo": null
+  },
+  {
+   "date": "1992-10-31",
+   "atlas": 22.4,
+   "ruw": 51.8,
+   "credit": 50.2,
+   "valuation": 68.0,
+   "monetary": 8.7,
+   "behavior": 58.2,
+   "geo": null
+  },
+  {
+   "date": "1992-11-30",
+   "atlas": 19.0,
+   "ruw": 50.8,
+   "credit": 50.5,
+   "valuation": 68.9,
+   "monetary": 13.8,
+   "behavior": 58.2,
+   "geo": null
+  },
+  {
+   "date": "1992-12-31",
+   "atlas": 11.7,
+   "ruw": 49.6,
+   "credit": 32.6,
+   "valuation": 71.3,
+   "monetary": 14.7,
+   "behavior": 55.7,
+   "geo": null
+  },
+  {
+   "date": "1993-01-31",
+   "atlas": 9.2,
+   "ruw": 48.7,
+   "credit": 31.5,
+   "valuation": 70.9,
+   "monetary": 17.8,
+   "behavior": 55.7,
+   "geo": null
+  },
+  {
+   "date": "1993-02-28",
+   "atlas": 8.8,
+   "ruw": 47.8,
+   "credit": 30.4,
+   "valuation": 70.7,
+   "monetary": 27.4,
+   "behavior": 55.7,
+   "geo": null
+  },
+  {
+   "date": "1993-03-31",
+   "atlas": 8.3,
+   "ruw": 47.4,
+   "credit": 28.9,
+   "valuation": 69.5,
+   "monetary": 26.2,
+   "behavior": 64.9,
+   "geo": null
+  },
+  {
+   "date": "1993-04-30",
+   "atlas": 8.3,
+   "ruw": 47.1,
+   "credit": 28.9,
+   "valuation": 69.2,
+   "monetary": 26.4,
+   "behavior": 64.9,
+   "geo": null
+  },
+  {
+   "date": "1993-05-31",
+   "atlas": 7.6,
+   "ruw": 46.7,
+   "credit": 30.0,
+   "valuation": 69.3,
+   "monetary": 27.7,
+   "behavior": 64.9,
+   "geo": null
+  },
+  {
+   "date": "1993-06-30",
+   "atlas": 7.6,
+   "ruw": 46.5,
+   "credit": 31.5,
+   "valuation": 68.8,
+   "monetary": 35.4,
+   "behavior": 62.8,
+   "geo": null
+  },
+  {
+   "date": "1993-07-31",
+   "atlas": 7.3,
+   "ruw": 46.2,
+   "credit": 31.8,
+   "valuation": 68.5,
+   "monetary": 34.8,
+   "behavior": 62.8,
+   "geo": null
+  },
+  {
+   "date": "1993-08-31",
+   "atlas": 7.3,
+   "ruw": 46.1,
+   "credit": 31.8,
+   "valuation": 68.5,
+   "monetary": 43.2,
+   "behavior": 62.8,
+   "geo": null
+  },
+  {
+   "date": "1993-09-30",
+   "atlas": 7.7,
+   "ruw": 46.4,
+   "credit": 32.3,
+   "valuation": 68.6,
+   "monetary": 42.1,
+   "behavior": 72.4,
+   "geo": null
+  },
+  {
+   "date": "1993-10-31",
+   "atlas": 8.6,
+   "ruw": 46.8,
+   "credit": 31.7,
+   "valuation": 68.6,
+   "monetary": 44.2,
+   "behavior": 72.4,
+   "geo": null
+  },
+  {
+   "date": "1993-11-30",
+   "atlas": 9.2,
+   "ruw": 47.0,
+   "credit": 32.5,
+   "valuation": 69.2,
+   "monetary": 37.4,
+   "behavior": 72.4,
+   "geo": null
+  },
+  {
+   "date": "1993-12-31",
+   "atlas": 10.3,
+   "ruw": 47.8,
+   "credit": 33.4,
+   "valuation": 70.4,
+   "monetary": 34.2,
+   "behavior": 78.7,
+   "geo": null
+  },
+  {
+   "date": "1994-01-31",
+   "atlas": 11.4,
+   "ruw": 48.7,
+   "credit": 34.5,
+   "valuation": 70.6,
+   "monetary": 36.9,
+   "behavior": 78.7,
+   "geo": null
+  },
+  {
+   "date": "1994-02-28",
+   "atlas": 13.1,
+   "ruw": 49.4,
+   "credit": 34.5,
+   "valuation": 70.8,
+   "monetary": 36.2,
+   "behavior": 78.7,
+   "geo": null
+  },
+  {
+   "date": "1994-03-31",
+   "atlas": 15.3,
+   "ruw": 49.7,
+   "credit": 36.0,
+   "valuation": 67.8,
+   "monetary": 23.8,
+   "behavior": 76.4,
+   "geo": null
+  },
+  {
+   "date": "1994-04-30",
+   "atlas": 18.3,
+   "ruw": 50.1,
+   "credit": 36.8,
+   "valuation": 67.7,
+   "monetary": 26.8,
+   "behavior": 76.4,
+   "geo": null
+  },
+  {
+   "date": "1994-05-31",
+   "atlas": 20.0,
+   "ruw": 50.6,
+   "credit": 35.8,
+   "valuation": 68.5,
+   "monetary": 32.3,
+   "behavior": 76.4,
+   "geo": null
+  },
+  {
+   "date": "1994-06-30",
+   "atlas": 23.2,
+   "ruw": 51.0,
+   "credit": 48.5,
+   "valuation": 66.9,
+   "monetary": 27.3,
+   "behavior": 72.8,
+   "geo": null
+  },
+  {
+   "date": "1994-07-31",
+   "atlas": 25.3,
+   "ruw": 51.7,
+   "credit": 48.6,
+   "valuation": 67.2,
+   "monetary": 35.7,
+   "behavior": 72.8,
+   "geo": null
+  },
+  {
+   "date": "1994-08-31",
+   "atlas": 26.6,
+   "ruw": 52.2,
+   "credit": 47.5,
+   "valuation": 67.7,
+   "monetary": 40.9,
+   "behavior": 72.8,
+   "geo": null
+  },
+  {
+   "date": "1994-09-30",
+   "atlas": 26.9,
+   "ruw": 52.4,
+   "credit": 48.9,
+   "valuation": 68.0,
+   "monetary": 33.6,
+   "behavior": 68.1,
+   "geo": null
+  },
+  {
+   "date": "1994-10-31",
+   "atlas": 27.3,
+   "ruw": 52.7,
+   "credit": 49.2,
+   "valuation": 68.3,
+   "monetary": 38.7,
+   "behavior": 68.1,
+   "geo": null
+  },
+  {
+   "date": "1994-11-30",
+   "atlas": 27.9,
+   "ruw": 53.3,
+   "credit": 48.5,
+   "valuation": 68.5,
+   "monetary": 48.8,
+   "behavior": 68.1,
+   "geo": null
+  },
+  {
+   "date": "1994-12-31",
+   "atlas": 28.7,
+   "ruw": 53.8,
+   "credit": 51.3,
+   "valuation": 64.3,
+   "monetary": 49.5,
+   "behavior": 68.2,
+   "geo": 54.5
+  },
+  {
+   "date": "1995-01-31",
+   "atlas": 29.1,
+   "ruw": 53.9,
+   "credit": 51.0,
+   "valuation": 64.7,
+   "monetary": 63.0,
+   "behavior": 68.2,
+   "geo": 0.0
+  },
+  {
+   "date": "1995-02-28",
+   "atlas": 29.6,
+   "ruw": 54.6,
+   "credit": 50.8,
+   "valuation": 64.6,
+   "monetary": 70.7,
+   "behavior": 68.2,
+   "geo": 48.3
+  },
+  {
+   "date": "1995-03-31",
+   "atlas": 32.1,
+   "ruw": 55.4,
+   "credit": 51.3,
+   "valuation": 65.3,
+   "monetary": 69.6,
+   "behavior": 62.9,
+   "geo": 47.9
+  },
+  {
+   "date": "1995-04-30",
+   "atlas": 34.0,
+   "ruw": 56.4,
+   "credit": 51.0,
+   "valuation": 65.7,
+   "monetary": 72.4,
+   "behavior": 62.9,
+   "geo": 61.3
+  },
+  {
+   "date": "1995-05-31",
+   "atlas": 36.6,
+   "ruw": 57.6,
+   "credit": 52.1,
+   "valuation": 65.0,
+   "monetary": 89.2,
+   "behavior": 62.9,
+   "geo": 73.4
+  },
+  {
+   "date": "1995-06-30",
+   "atlas": 37.8,
+   "ruw": 58.8,
+   "credit": 56.7,
+   "valuation": 70.3,
+   "monetary": 86.0,
+   "behavior": 62.0,
+   "geo": 68.6
+  },
+  {
+   "date": "1995-07-31",
+   "atlas": 39.2,
+   "ruw": 59.9,
+   "credit": 57.7,
+   "valuation": 71.0,
+   "monetary": 80.0,
+   "behavior": 62.0,
+   "geo": 78.0
+  },
+  {
+   "date": "1995-08-31",
+   "atlas": 40.4,
+   "ruw": 60.9,
+   "credit": 59.7,
+   "valuation": 71.3,
+   "monetary": 80.2,
+   "behavior": 62.0,
+   "geo": 79.0
+  },
+  {
+   "date": "1995-09-30",
+   "atlas": 44.3,
+   "ruw": 62.3,
+   "credit": 61.9,
+   "valuation": 72.5,
+   "monetary": 81.4,
+   "behavior": 72.8,
+   "geo": 76.6
+  },
+  {
+   "date": "1995-10-31",
+   "atlas": 47.0,
+   "ruw": 63.7,
+   "credit": 62.4,
+   "valuation": 72.3,
+   "monetary": 86.3,
+   "behavior": 72.8,
+   "geo": 63.6
+  },
+  {
+   "date": "1995-11-30",
+   "atlas": 49.0,
+   "ruw": 64.9,
+   "credit": 62.7,
+   "valuation": 72.3,
+   "monetary": 92.3,
+   "behavior": 72.8,
+   "geo": 61.7
+  },
+  {
+   "date": "1995-12-31",
+   "atlas": 49.9,
+   "ruw": 65.7,
+   "credit": 64.9,
+   "valuation": 73.8,
+   "monetary": 87.2,
+   "behavior": 75.2,
+   "geo": 0.3
+  },
+  {
+   "date": "1996-01-31",
+   "atlas": 51.7,
+   "ruw": 67.0,
+   "credit": 65.1,
+   "valuation": 73.6,
+   "monetary": 85.2,
+   "behavior": 75.2,
+   "geo": 30.8
+  },
+  {
+   "date": "1996-02-29",
+   "atlas": 53.2,
+   "ruw": 67.9,
+   "credit": 66.2,
+   "valuation": 74.2,
+   "monetary": 71.8,
+   "behavior": 75.2,
+   "geo": 73.4
+  },
+  {
+   "date": "1996-03-31",
+   "atlas": 54.4,
+   "ruw": 68.8,
+   "credit": 68.0,
+   "valuation": 77.6,
+   "monetary": 69.4,
+   "behavior": 83.9,
+   "geo": 48.1
+  },
+  {
+   "date": "1996-04-30",
+   "atlas": 55.5,
+   "ruw": 69.7,
+   "credit": 68.2,
+   "valuation": 78.1,
+   "monetary": 62.0,
+   "behavior": 83.9,
+   "geo": 66.9
+  },
+  {
+   "date": "1996-05-31",
+   "atlas": 55.6,
+   "ruw": 69.8,
+   "credit": 67.7,
+   "valuation": 79.1,
+   "monetary": 58.4,
+   "behavior": 83.9,
+   "geo": 27.6
+  },
+  {
+   "date": "1996-06-30",
+   "atlas": 55.7,
+   "ruw": 69.8,
+   "credit": 68.4,
+   "valuation": 77.3,
+   "monetary": 61.2,
+   "behavior": 82.0,
+   "geo": 30.3
+  },
+  {
+   "date": "1996-07-31",
+   "atlas": 55.1,
+   "ruw": 69.6,
+   "credit": 67.9,
+   "valuation": 76.6,
+   "monetary": 62.9,
+   "behavior": 82.0,
+   "geo": 10.8
+  },
+  {
+   "date": "1996-08-31",
+   "atlas": 56.1,
+   "ruw": 69.9,
+   "credit": 67.3,
+   "valuation": 76.2,
+   "monetary": 58.3,
+   "behavior": 82.0,
+   "geo": 79.9
+  },
+  {
+   "date": "1996-09-30",
+   "atlas": 54.5,
+   "ruw": 69.4,
+   "credit": 67.7,
+   "valuation": 72.7,
+   "monetary": 60.4,
+   "behavior": 77.9,
+   "geo": 37.1
+  },
+  {
+   "date": "1996-10-31",
+   "atlas": 54.6,
+   "ruw": 69.5,
+   "credit": 68.0,
+   "valuation": 72.2,
+   "monetary": 69.5,
+   "behavior": 77.9,
+   "geo": 78.4
+  },
+  {
+   "date": "1996-11-30",
+   "atlas": 54.3,
+   "ruw": 69.4,
+   "credit": 68.4,
+   "valuation": 71.6,
+   "monetary": 75.8,
+   "behavior": 77.9,
+   "geo": 60.9
+  },
+  {
+   "date": "1996-12-31",
+   "atlas": 56.4,
+   "ruw": 69.9,
+   "credit": 69.5,
+   "valuation": 73.2,
+   "monetary": 68.7,
+   "behavior": 83.8,
+   "geo": 62.4
+  },
+  {
+   "date": "1997-01-31",
+   "atlas": 56.9,
+   "ruw": 70.2,
+   "credit": 70.1,
+   "valuation": 74.4,
+   "monetary": 64.8,
+   "behavior": 83.8,
+   "geo": 77.1
+  },
+  {
+   "date": "1997-02-28",
+   "atlas": 57.2,
+   "ruw": 70.4,
+   "credit": 70.1,
+   "valuation": 74.1,
+   "monetary": 65.7,
+   "behavior": 83.8,
+   "geo": 73.3
+  },
+  {
+   "date": "1997-03-31",
+   "atlas": 57.3,
+   "ruw": 70.4,
+   "credit": 70.7,
+   "valuation": 73.4,
+   "monetary": 60.1,
+   "behavior": 87.9,
+   "geo": 65.0
+  },
+  {
+   "date": "1997-04-30",
+   "atlas": 57.6,
+   "ruw": 70.6,
+   "credit": 71.4,
+   "valuation": 73.3,
+   "monetary": 63.3,
+   "behavior": 87.9,
+   "geo": 77.6
+  },
+  {
+   "date": "1997-05-31",
+   "atlas": 58.5,
+   "ruw": 71.0,
+   "credit": 71.9,
+   "valuation": 73.6,
+   "monetary": 56.7,
+   "behavior": 87.9,
+   "geo": 76.5
+  },
+  {
+   "date": "1997-06-30",
+   "atlas": 59.4,
+   "ruw": 71.6,
+   "credit": 74.1,
+   "valuation": 76.6,
+   "monetary": 67.6,
+   "behavior": 96.1,
+   "geo": 39.8
+  },
+  {
+   "date": "1997-07-31",
+   "atlas": 60.6,
+   "ruw": 72.8,
+   "credit": 74.4,
+   "valuation": 76.4,
+   "monetary": 79.3,
+   "behavior": 96.1,
+   "geo": 73.3
+  },
+  {
+   "date": "1997-08-31",
+   "atlas": 61.3,
+   "ruw": 73.2,
+   "credit": 75.3,
+   "valuation": 76.4,
+   "monetary": 71.2,
+   "behavior": 96.1,
+   "geo": 52.8
+  },
+  {
+   "date": "1997-09-30",
+   "atlas": 63.6,
+   "ruw": 74.4,
+   "credit": 79.7,
+   "valuation": 77.5,
+   "monetary": 72.0,
+   "behavior": 98.4,
+   "geo": 70.2
+  },
+  {
+   "date": "1997-10-31",
+   "atlas": 64.3,
+   "ruw": 74.9,
+   "credit": 79.8,
+   "valuation": 77.1,
+   "monetary": 82.3,
+   "behavior": 98.4,
+   "geo": 25.3
+  },
+  {
+   "date": "1997-11-30",
+   "atlas": 65.9,
+   "ruw": 75.5,
+   "credit": 80.2,
+   "valuation": 76.3,
+   "monetary": 81.8,
+   "behavior": 98.4,
+   "geo": 33.3
+  },
+  {
+   "date": "1997-12-31",
+   "atlas": 67.4,
+   "ruw": 76.5,
+   "credit": 82.0,
+   "valuation": 76.6,
+   "monetary": 87.6,
+   "behavior": 97.2,
+   "geo": 73.4
+  },
+  {
+   "date": "1998-01-31",
+   "atlas": 68.2,
+   "ruw": 76.9,
+   "credit": 82.3,
+   "valuation": 75.6,
+   "monetary": 88.4,
+   "behavior": 97.2,
+   "geo": 17.3
+  },
+  {
+   "date": "1998-02-28",
+   "atlas": 70.3,
+   "ruw": 77.8,
+   "credit": 83.3,
+   "valuation": 76.3,
+   "monetary": 89.1,
+   "behavior": 97.2,
+   "geo": 59.1
+  },
+  {
+   "date": "1998-03-31",
+   "atlas": 73.5,
+   "ruw": 78.9,
+   "credit": 88.0,
+   "valuation": 75.8,
+   "monetary": 83.8,
+   "behavior": 98.4,
+   "geo": 76.1
+  },
+  {
+   "date": "1998-04-30",
+   "atlas": 74.2,
+   "ruw": 79.7,
+   "credit": 88.1,
+   "valuation": 75.9,
+   "monetary": 79.5,
+   "behavior": 98.4,
+   "geo": 63.1
+  },
+  {
+   "date": "1998-05-31",
+   "atlas": 75.6,
+   "ruw": 80.6,
+   "credit": 88.1,
+   "valuation": 75.7,
+   "monetary": 82.9,
+   "behavior": 98.4,
+   "geo": 61.1
+  },
+  {
+   "date": "1998-06-30",
+   "atlas": 78.2,
+   "ruw": 81.6,
+   "credit": 91.3,
+   "valuation": 73.9,
+   "monetary": 87.1,
+   "behavior": 97.8,
+   "geo": 72.7
+  },
+  {
+   "date": "1998-07-31",
+   "atlas": 79.2,
+   "ruw": 82.0,
+   "credit": 91.0,
+   "valuation": 74.4,
+   "monetary": 85.4,
+   "behavior": 97.8,
+   "geo": 60.7
+  },
+  {
+   "date": "1998-08-31",
+   "atlas": 79.5,
+   "ruw": 82.3,
+   "credit": 90.7,
+   "valuation": 73.0,
+   "monetary": 92.4,
+   "behavior": 97.8,
+   "geo": 0.0
+  },
+  {
+   "date": "1998-09-30",
+   "atlas": 80.1,
+   "ruw": 82.4,
+   "credit": 92.8,
+   "valuation": 68.9,
+   "monetary": 92.4,
+   "behavior": 94.5,
+   "geo": 31.1
+  },
+  {
+   "date": "1998-10-31",
+   "atlas": 81.3,
+   "ruw": 83.0,
+   "credit": 93.5,
+   "valuation": 68.6,
+   "monetary": 86.5,
+   "behavior": 94.5,
+   "geo": 67.8
+  },
+  {
+   "date": "1998-11-30",
+   "atlas": 83.5,
+   "ruw": 83.6,
+   "credit": 94.0,
+   "valuation": 69.7,
+   "monetary": 89.4,
+   "behavior": 94.5,
+   "geo": 69.7
+  },
+  {
+   "date": "1998-12-31",
+   "atlas": 84.8,
+   "ruw": 83.9,
+   "credit": 96.1,
+   "valuation": 74.8,
+   "monetary": 89.1,
+   "behavior": 97.5,
+   "geo": 70.5
+  },
+  {
+   "date": "1999-01-31",
+   "atlas": 86.4,
+   "ruw": 84.4,
+   "credit": 95.9,
+   "valuation": 75.2,
+   "monetary": 88.5,
+   "behavior": 97.5,
+   "geo": 36.3
+  },
+  {
+   "date": "1999-02-28",
+   "atlas": 86.7,
+   "ruw": 84.6,
+   "credit": 95.3,
+   "valuation": 75.7,
+   "monetary": 77.9,
+   "behavior": 97.5,
+   "geo": 63.5
+  },
+  {
+   "date": "1999-03-31",
+   "atlas": 86.5,
+   "ruw": 84.6,
+   "credit": 95.0,
+   "valuation": 76.6,
+   "monetary": 74.8,
+   "behavior": 97.4,
+   "geo": 70.3
+  },
+  {
+   "date": "1999-04-30",
+   "atlas": 86.7,
+   "ruw": 84.7,
+   "credit": 93.9,
+   "valuation": 76.7,
+   "monetary": 73.5,
+   "behavior": 97.4,
+   "geo": 74.8
+  },
+  {
+   "date": "1999-05-31",
+   "atlas": 86.7,
+   "ruw": 84.7,
+   "credit": 94.1,
+   "valuation": 77.6,
+   "monetary": 69.5,
+   "behavior": 97.4,
+   "geo": 68.4
+  },
+  {
+   "date": "1999-06-30",
+   "atlas": 86.0,
+   "ruw": 84.5,
+   "credit": 94.4,
+   "valuation": 82.6,
+   "monetary": 68.3,
+   "behavior": 98.7,
+   "geo": 63.8
+  },
+  {
+   "date": "1999-07-31",
+   "atlas": 86.2,
+   "ruw": 84.6,
+   "credit": 94.3,
+   "valuation": 82.6,
+   "monetary": 65.0,
+   "behavior": 98.7,
+   "geo": 74.5
+  },
+  {
+   "date": "1999-08-31",
+   "atlas": 88.5,
+   "ruw": 85.1,
+   "credit": 93.6,
+   "valuation": 82.5,
+   "monetary": 68.9,
+   "behavior": 98.7,
+   "geo": 77.4
+  },
+  {
+   "date": "1999-09-30",
+   "atlas": 89.7,
+   "ruw": 85.3,
+   "credit": 92.5,
+   "valuation": 82.4,
+   "monetary": 68.3,
+   "behavior": 96.6,
+   "geo": 76.3
+  },
+  {
+   "date": "1999-10-31",
+   "atlas": 88.4,
+   "ruw": 85.1,
+   "credit": 91.9,
+   "valuation": 82.6,
+   "monetary": 71.0,
+   "behavior": 96.6,
+   "geo": 44.3
+  },
+  {
+   "date": "1999-11-30",
+   "atlas": 87.1,
+   "ruw": 84.9,
+   "credit": 91.0,
+   "valuation": 82.9,
+   "monetary": 71.4,
+   "behavior": 96.6,
+   "geo": 66.5
+  },
+  {
+   "date": "1999-12-31",
+   "atlas": 85.8,
+   "ruw": 84.6,
+   "credit": 90.7,
+   "valuation": 85.3,
+   "monetary": 65.8,
+   "behavior": 98.9,
+   "geo": 75.8
+  },
+  {
+   "date": "2000-01-31",
+   "atlas": 85.6,
+   "ruw": 84.6,
+   "credit": 90.3,
+   "valuation": 85.1,
+   "monetary": 70.4,
+   "behavior": 98.9,
+   "geo": 66.7
+  },
+  {
+   "date": "2000-02-29",
+   "atlas": 86.0,
+   "ruw": 84.7,
+   "credit": 88.9,
+   "valuation": 84.8,
+   "monetary": 76.8,
+   "behavior": 98.9,
+   "geo": 73.3
+  },
+  {
+   "date": "2000-03-31",
+   "atlas": 86.6,
+   "ruw": 84.8,
+   "credit": 88.9,
+   "valuation": 84.3,
+   "monetary": 88.0,
+   "behavior": 98.8,
+   "geo": 62.0
+  },
+  {
+   "date": "2000-04-30",
+   "atlas": 88.1,
+   "ruw": 85.0,
+   "credit": 91.7,
+   "valuation": 84.0,
+   "monetary": 81.7,
+   "behavior": 98.8,
+   "geo": 69.1
+  },
+  {
+   "date": "2000-05-31",
+   "atlas": 89.3,
+   "ruw": 85.1,
+   "credit": 89.6,
+   "valuation": 84.1,
+   "monetary": 75.8,
+   "behavior": 98.8,
+   "geo": 68.2
+  },
+  {
+   "date": "2000-06-30",
+   "atlas": 90.2,
+   "ruw": 85.3,
+   "credit": 87.7,
+   "valuation": 84.0,
+   "monetary": 87.4,
+   "behavior": 96.4,
+   "geo": 69.2
+  },
+  {
+   "date": "2000-07-31",
+   "atlas": 90.8,
+   "ruw": 85.5,
+   "credit": 87.4,
+   "valuation": 83.7,
+   "monetary": 95.8,
+   "behavior": 96.4,
+   "geo": 60.7
+  },
+  {
+   "date": "2000-08-31",
+   "atlas": 92.3,
+   "ruw": 85.9,
+   "credit": 88.4,
+   "valuation": 83.4,
+   "monetary": 100.0,
+   "behavior": 96.4,
+   "geo": 76.4
+  },
+  {
+   "date": "2000-09-30",
+   "atlas": 92.7,
+   "ruw": 86.0,
+   "credit": 88.7,
+   "valuation": 85.2,
+   "monetary": 99.2,
+   "behavior": 95.6,
+   "geo": 36.9
+  },
+  {
+   "date": "2000-10-31",
+   "atlas": 96.5,
+   "ruw": 86.6,
+   "credit": 88.0,
+   "valuation": 84.8,
+   "monetary": 100.0,
+   "behavior": 95.6,
+   "geo": 70.3
+  },
+  {
+   "date": "2000-11-30",
+   "atlas": 96.7,
+   "ruw": 86.7,
+   "credit": 87.4,
+   "valuation": 84.5,
+   "monetary": 100.0,
+   "behavior": 95.6,
+   "geo": 27.7
+  },
+  {
+   "date": "2000-12-31",
+   "atlas": 94.2,
+   "ruw": 86.2,
+   "credit": 87.9,
+   "valuation": 78.7,
+   "monetary": 100.0,
+   "behavior": 84.1,
+   "geo": 0.0
+  },
+  {
+   "date": "2001-01-31",
+   "atlas": 91.3,
+   "ruw": 85.9,
+   "credit": 88.3,
+   "valuation": 78.4,
+   "monetary": 83.1,
+   "behavior": 84.1,
+   "geo": 45.9
+  },
+  {
+   "date": "2001-02-28",
+   "atlas": 88.3,
+   "ruw": 85.3,
+   "credit": 89.9,
+   "valuation": 78.0,
+   "monetary": 85.7,
+   "behavior": 84.1,
+   "geo": 26.3
+  },
+  {
+   "date": "2001-03-31",
+   "atlas": 82.5,
+   "ruw": 84.4,
+   "credit": 89.5,
+   "valuation": 73.9,
+   "monetary": 73.2,
+   "behavior": 68.0,
+   "geo": 71.7
+  },
+  {
+   "date": "2001-04-30",
+   "atlas": 77.7,
+   "ruw": 83.3,
+   "credit": 89.1,
+   "valuation": 74.2,
+   "monetary": 56.2,
+   "behavior": 68.0,
+   "geo": 67.7
+  },
+  {
+   "date": "2001-05-31",
+   "atlas": 74.5,
+   "ruw": 82.1,
+   "credit": 88.9,
+   "valuation": 75.1,
+   "monetary": 47.3,
+   "behavior": 68.0,
+   "geo": 66.1
+  },
+  {
+   "date": "2001-06-30",
+   "atlas": 71.2,
+   "ruw": 80.9,
+   "credit": 90.6,
+   "valuation": 76.8,
+   "monetary": 48.0,
+   "behavior": 69.4,
+   "geo": 64.2
+  },
+  {
+   "date": "2001-07-31",
+   "atlas": 68.5,
+   "ruw": 79.3,
+   "credit": 91.8,
+   "valuation": 76.4,
+   "monetary": 53.3,
+   "behavior": 69.4,
+   "geo": 8.8
+  },
+  {
+   "date": "2001-08-31",
+   "atlas": 65.5,
+   "ruw": 77.9,
+   "credit": 91.9,
+   "valuation": 75.8,
+   "monetary": 54.4,
+   "behavior": 69.4,
+   "geo": 64.4
+  },
+  {
+   "date": "2001-09-30",
+   "atlas": 61.5,
+   "ruw": 76.3,
+   "credit": 94.7,
+   "valuation": 69.3,
+   "monetary": 38.3,
+   "behavior": 86.2,
+   "geo": 0.0
+  },
+  {
+   "date": "2001-10-31",
+   "atlas": 58.5,
+   "ruw": 74.7,
+   "credit": 94.5,
+   "valuation": 69.3,
+   "monetary": 37.2,
+   "behavior": 86.2,
+   "geo": 27.9
+  },
+  {
+   "date": "2001-11-30",
+   "atlas": 55.8,
+   "ruw": 73.2,
+   "credit": 95.5,
+   "valuation": 69.6,
+   "monetary": 16.1,
+   "behavior": 86.2,
+   "geo": 46.2
+  },
+  {
+   "date": "2001-12-31",
+   "atlas": 53.7,
+   "ruw": 71.7,
+   "credit": 93.4,
+   "valuation": 73.1,
+   "monetary": 9.2,
+   "behavior": 65.4,
+   "geo": 24.4
+  },
+  {
+   "date": "2002-01-31",
+   "atlas": 50.0,
+   "ruw": 69.9,
+   "credit": 93.0,
+   "valuation": 73.0,
+   "monetary": 11.2,
+   "behavior": 65.4,
+   "geo": 8.7
+  },
+  {
+   "date": "2002-02-28",
+   "atlas": 46.8,
+   "ruw": 68.3,
+   "credit": 92.7,
+   "valuation": 72.5,
+   "monetary": 16.2,
+   "behavior": 65.4,
+   "geo": 11.5
+  },
+  {
+   "date": "2002-03-31",
+   "atlas": 44.4,
+   "ruw": 66.7,
+   "credit": 88.2,
+   "valuation": 72.2,
+   "monetary": 4.7,
+   "behavior": 62.1,
+   "geo": 39.4
+  },
+  {
+   "date": "2002-04-30",
+   "atlas": 43.1,
+   "ruw": 65.7,
+   "credit": 85.1,
+   "valuation": 71.7,
+   "monetary": 12.5,
+   "behavior": 62.1,
+   "geo": 63.1
+  },
+  {
+   "date": "2002-05-31",
+   "atlas": 41.9,
+   "ruw": 64.9,
+   "credit": 86.7,
+   "valuation": 71.4,
+   "monetary": 13.4,
+   "behavior": 62.1,
+   "geo": 60.2
+  },
+  {
+   "date": "2002-06-30",
+   "atlas": 40.0,
+   "ruw": 63.5,
+   "credit": 84.5,
+   "valuation": 67.9,
+   "monetary": 17.0,
+   "behavior": 46.6,
+   "geo": 42.2
+  },
+  {
+   "date": "2002-07-31",
+   "atlas": 39.2,
+   "ruw": 62.6,
+   "credit": 84.1,
+   "valuation": 66.6,
+   "monetary": 23.6,
+   "behavior": 46.6,
+   "geo": 52.5
+  },
+  {
+   "date": "2002-08-31",
+   "atlas": 35.4,
+   "ruw": 61.5,
+   "credit": 83.8,
+   "valuation": 66.2,
+   "monetary": 30.4,
+   "behavior": 46.6,
+   "geo": 64.2
+  },
+  {
+   "date": "2002-09-30",
+   "atlas": 33.9,
+   "ruw": 60.4,
+   "credit": 79.6,
+   "valuation": 63.2,
+   "monetary": 39.1,
+   "behavior": 33.1,
+   "geo": 40.1
+  },
+  {
+   "date": "2002-10-31",
+   "atlas": 32.6,
+   "ruw": 59.3,
+   "credit": 80.5,
+   "valuation": 62.9,
+   "monetary": 28.8,
+   "behavior": 33.1,
+   "geo": 63.9
+  },
+  {
+   "date": "2002-11-30",
+   "atlas": 31.1,
+   "ruw": 58.0,
+   "credit": 80.2,
+   "valuation": 63.9,
+   "monetary": 19.3,
+   "behavior": 33.1,
+   "geo": 52.4
+  },
+  {
+   "date": "2002-12-31",
+   "atlas": 30.2,
+   "ruw": 57.2,
+   "credit": 78.7,
+   "valuation": 64.8,
+   "monetary": 27.4,
+   "behavior": 34.2,
+   "geo": 15.5
+  },
+  {
+   "date": "2003-01-31",
+   "atlas": 29.3,
+   "ruw": 56.7,
+   "credit": 78.6,
+   "valuation": 64.6,
+   "monetary": 22.0,
+   "behavior": 34.2,
+   "geo": 43.2
+  },
+  {
+   "date": "2003-02-28",
+   "atlas": 27.1,
+   "ruw": 55.9,
+   "credit": 78.0,
+   "valuation": 63.1,
+   "monetary": 29.5,
+   "behavior": 34.2,
+   "geo": 17.1
+  },
+  {
+   "date": "2003-03-31",
+   "atlas": 26.3,
+   "ruw": 55.2,
+   "credit": 76.2,
+   "valuation": 62.2,
+   "monetary": 26.7,
+   "behavior": 35.1,
+   "geo": 28.7
+  },
+  {
+   "date": "2003-04-30",
+   "atlas": 24.5,
+   "ruw": 54.5,
+   "credit": 79.6,
+   "valuation": 63.5,
+   "monetary": 25.5,
+   "behavior": 35.1,
+   "geo": 38.5
+  },
+  {
+   "date": "2003-05-31",
+   "atlas": 24.3,
+   "ruw": 54.2,
+   "credit": 81.2,
+   "valuation": 64.0,
+   "monetary": 37.9,
+   "behavior": 35.1,
+   "geo": 59.8
+  },
+  {
+   "date": "2003-06-30",
+   "atlas": 26.2,
+   "ruw": 55.0,
+   "credit": 84.2,
+   "valuation": 66.5,
+   "monetary": 27.8,
+   "behavior": 73.4,
+   "geo": 63.1
+  },
+  {
+   "date": "2003-07-31",
+   "atlas": 26.3,
+   "ruw": 55.1,
+   "credit": 84.1,
+   "valuation": 67.3,
+   "monetary": 7.0,
+   "behavior": 73.4,
+   "geo": 44.3
+  },
+  {
+   "date": "2003-08-31",
+   "atlas": 26.4,
+   "ruw": 55.1,
+   "credit": 84.4,
+   "valuation": 67.7,
+   "monetary": 8.8,
+   "behavior": 73.4,
+   "geo": 53.4
+  },
+  {
+   "date": "2003-09-30",
+   "atlas": 27.8,
+   "ruw": 55.6,
+   "credit": 82.1,
+   "valuation": 68.0,
+   "monetary": 20.2,
+   "behavior": 62.8,
+   "geo": 58.2
+  },
+  {
+   "date": "2003-10-31",
+   "atlas": 28.6,
+   "ruw": 55.9,
+   "credit": 80.8,
+   "valuation": 68.2,
+   "monetary": 13.8,
+   "behavior": 62.8,
+   "geo": 61.7
+  },
+  {
+   "date": "2003-11-30",
+   "atlas": 29.4,
+   "ruw": 56.3,
+   "credit": 79.1,
+   "valuation": 68.3,
+   "monetary": 12.4,
+   "behavior": 62.8,
+   "geo": 46.1
+  },
+  {
+   "date": "2003-12-31",
+   "atlas": 30.8,
+   "ruw": 56.9,
+   "credit": 78.1,
+   "valuation": 71.6,
+   "monetary": 15.5,
+   "behavior": 49.3,
+   "geo": 63.5
+  },
+  {
+   "date": "2004-01-31",
+   "atlas": 32.1,
+   "ruw": 57.4,
+   "credit": 76.8,
+   "valuation": 71.7,
+   "monetary": 17.5,
+   "behavior": 49.3,
+   "geo": 80.6
+  },
+  {
+   "date": "2004-02-29",
+   "atlas": 33.1,
+   "ruw": 58.1,
+   "credit": 77.9,
+   "valuation": 71.6,
+   "monetary": 21.8,
+   "behavior": 49.3,
+   "geo": 64.0
+  },
+  {
+   "date": "2004-03-31",
+   "atlas": 33.7,
+   "ruw": 58.8,
+   "credit": 80.1,
+   "valuation": 71.6,
+   "monetary": 23.7,
+   "behavior": 51.3,
+   "geo": 54.6
+  },
+  {
+   "date": "2004-04-30",
+   "atlas": 34.4,
+   "ruw": 59.2,
+   "credit": 78.4,
+   "valuation": 72.3,
+   "monetary": 8.4,
+   "behavior": 51.3,
+   "geo": 71.6
+  },
+  {
+   "date": "2004-05-31",
+   "atlas": 34.3,
+   "ruw": 59.1,
+   "credit": 77.5,
+   "valuation": 72.4,
+   "monetary": 7.4,
+   "behavior": 51.3,
+   "geo": 78.0
+  },
+  {
+   "date": "2004-06-30",
+   "atlas": 33.4,
+   "ruw": 58.4,
+   "credit": 75.8,
+   "valuation": 73.2,
+   "monetary": 17.1,
+   "behavior": 55.0,
+   "geo": 48.1
+  },
+  {
+   "date": "2004-07-31",
+   "atlas": 33.3,
+   "ruw": 58.4,
+   "credit": 75.1,
+   "valuation": 72.6,
+   "monetary": 22.3,
+   "behavior": 55.0,
+   "geo": 62.2
+  },
+  {
+   "date": "2004-08-31",
+   "atlas": 33.8,
+   "ruw": 58.5,
+   "credit": 74.7,
+   "valuation": 71.9,
+   "monetary": 34.7,
+   "behavior": 55.0,
+   "geo": 77.3
+  },
+  {
+   "date": "2004-09-30",
+   "atlas": 33.9,
+   "ruw": 58.7,
+   "credit": 77.5,
+   "valuation": 72.1,
+   "monetary": 38.0,
+   "behavior": 51.2,
+   "geo": 73.7
+  },
+  {
+   "date": "2004-10-31",
+   "atlas": 34.2,
+   "ruw": 58.8,
+   "credit": 77.3,
+   "valuation": 71.9,
+   "monetary": 43.9,
+   "behavior": 51.2,
+   "geo": 40.0
+  },
+  {
+   "date": "2004-11-30",
+   "atlas": 35.8,
+   "ruw": 59.4,
+   "credit": 77.1,
+   "valuation": 72.6,
+   "monetary": 44.5,
+   "behavior": 51.2,
+   "geo": 74.0
+  },
+  {
+   "date": "2004-12-31",
+   "atlas": 37.0,
+   "ruw": 60.5,
+   "credit": 81.4,
+   "valuation": 75.1,
+   "monetary": 46.4,
+   "behavior": 66.3,
+   "geo": 87.4
+  },
+  {
+   "date": "2005-01-31",
+   "atlas": 38.4,
+   "ruw": 61.3,
+   "credit": 82.8,
+   "valuation": 74.9,
+   "monetary": 52.3,
+   "behavior": 66.3,
+   "geo": 48.7
+  },
+  {
+   "date": "2005-02-28",
+   "atlas": 41.1,
+   "ruw": 62.3,
+   "credit": 80.9,
+   "valuation": 74.8,
+   "monetary": 52.7,
+   "behavior": 66.3,
+   "geo": 73.3
+  },
+  {
+   "date": "2005-03-31",
+   "atlas": 43.2,
+   "ruw": 63.0,
+   "credit": 80.3,
+   "valuation": 75.3,
+   "monetary": 50.7,
+   "behavior": 63.2,
+   "geo": 48.3
+  },
+  {
+   "date": "2005-04-30",
+   "atlas": 43.8,
+   "ruw": 63.7,
+   "credit": 78.8,
+   "valuation": 74.4,
+   "monetary": 57.6,
+   "behavior": 63.2,
+   "geo": 26.5
+  },
+  {
+   "date": "2005-05-31",
+   "atlas": 44.8,
+   "ruw": 64.7,
+   "credit": 77.7,
+   "valuation": 74.2,
+   "monetary": 64.3,
+   "behavior": 63.2,
+   "geo": 56.0
+  },
+  {
+   "date": "2005-06-30",
+   "atlas": 47.4,
+   "ruw": 65.9,
+   "credit": 81.0,
+   "valuation": 75.2,
+   "monetary": 69.6,
+   "behavior": 62.2,
+   "geo": 57.7
+  },
+  {
+   "date": "2005-07-31",
+   "atlas": 49.2,
+   "ruw": 67.1,
+   "credit": 80.6,
+   "valuation": 75.5,
+   "monetary": 67.3,
+   "behavior": 62.2,
+   "geo": 79.6
+  },
+  {
+   "date": "2005-08-31",
+   "atlas": 50.4,
+   "ruw": 68.2,
+   "credit": 79.4,
+   "valuation": 75.6,
+   "monetary": 77.0,
+   "behavior": 62.2,
+   "geo": 79.7
+  },
+  {
+   "date": "2005-09-30",
+   "atlas": 51.2,
+   "ruw": 68.8,
+   "credit": 77.4,
+   "valuation": 76.2,
+   "monetary": 69.2,
+   "behavior": 64.0,
+   "geo": 53.2
+  },
+  {
+   "date": "2005-10-31",
+   "atlas": 52.7,
+   "ruw": 69.6,
+   "credit": 78.4,
+   "valuation": 76.1,
+   "monetary": 74.4,
+   "behavior": 64.0,
+   "geo": 38.6
+  },
+  {
+   "date": "2005-11-30",
+   "atlas": 55.2,
+   "ruw": 70.4,
+   "credit": 80.6,
+   "valuation": 76.9,
+   "monetary": 75.2,
+   "behavior": 64.0,
+   "geo": 66.6
+  },
+  {
+   "date": "2005-12-31",
+   "atlas": 54.9,
+   "ruw": 70.4,
+   "credit": 81.3,
+   "valuation": 77.1,
+   "monetary": 80.4,
+   "behavior": 55.4,
+   "geo": 32.8
+  },
+  {
+   "date": "2006-01-31",
+   "atlas": 56.2,
+   "ruw": 70.9,
+   "credit": 81.0,
+   "valuation": 77.0,
+   "monetary": 85.7,
+   "behavior": 55.4,
+   "geo": 69.4
+  },
+  {
+   "date": "2006-02-28",
+   "atlas": 56.9,
+   "ruw": 71.3,
+   "credit": 82.7,
+   "valuation": 77.0,
+   "monetary": 89.6,
+   "behavior": 55.4,
+   "geo": 64.1
+  },
+  {
+   "date": "2006-03-31",
+   "atlas": 58.6,
+   "ruw": 72.2,
+   "credit": 84.5,
+   "valuation": 77.4,
+   "monetary": 80.8,
+   "behavior": 60.0,
+   "geo": 81.3
+  },
+  {
+   "date": "2006-04-30",
+   "atlas": 58.9,
+   "ruw": 72.9,
+   "credit": 85.1,
+   "valuation": 77.6,
+   "monetary": 78.6,
+   "behavior": 60.0,
+   "geo": 52.3
+  },
+  {
+   "date": "2006-05-31",
+   "atlas": 59.6,
+   "ruw": 73.2,
+   "credit": 83.7,
+   "valuation": 77.4,
+   "monetary": 79.9,
+   "behavior": 60.0,
+   "geo": 41.3
+  },
+  {
+   "date": "2006-06-30",
+   "atlas": 59.5,
+   "ruw": 73.2,
+   "credit": 83.2,
+   "valuation": 74.4,
+   "monetary": 82.5,
+   "behavior": 60.6,
+   "geo": 28.2
+  },
+  {
+   "date": "2006-07-31",
+   "atlas": 60.2,
+   "ruw": 73.3,
+   "credit": 83.8,
+   "valuation": 74.3,
+   "monetary": 89.1,
+   "behavior": 60.6,
+   "geo": 47.1
+  },
+  {
+   "date": "2006-08-31",
+   "atlas": 61.0,
+   "ruw": 73.6,
+   "credit": 84.2,
+   "valuation": 74.3,
+   "monetary": 93.3,
+   "behavior": 60.6,
+   "geo": 76.3
+  },
+  {
+   "date": "2006-09-30",
+   "atlas": 61.8,
+   "ruw": 74.3,
+   "credit": 88.9,
+   "valuation": 73.9,
+   "monetary": 92.2,
+   "behavior": 60.9,
+   "geo": 66.2
+  },
+  {
+   "date": "2006-10-31",
+   "atlas": 64.2,
+   "ruw": 75.2,
+   "credit": 91.0,
+   "valuation": 74.8,
+   "monetary": 95.4,
+   "behavior": 60.9,
+   "geo": 75.5
+  },
+  {
+   "date": "2006-11-30",
+   "atlas": 64.4,
+   "ruw": 75.5,
+   "credit": 90.4,
+   "valuation": 74.8,
+   "monetary": 96.2,
+   "behavior": 60.9,
+   "geo": 36.3
+  },
+  {
+   "date": "2006-12-31",
+   "atlas": 65.0,
+   "ruw": 76.0,
+   "credit": 89.9,
+   "valuation": 74.8,
+   "monetary": 91.4,
+   "behavior": 69.5,
+   "geo": 20.7
+  },
+  {
+   "date": "2007-01-31",
+   "atlas": 65.4,
+   "ruw": 76.2,
+   "credit": 90.8,
+   "valuation": 75.1,
+   "monetary": 90.2,
+   "behavior": 69.5,
+   "geo": 36.9
+  },
+  {
+   "date": "2007-02-28",
+   "atlas": 66.2,
+   "ruw": 76.8,
+   "credit": 89.7,
+   "valuation": 75.0,
+   "monetary": 95.6,
+   "behavior": 69.5,
+   "geo": 68.1
+  },
+  {
+   "date": "2007-03-31",
+   "atlas": 66.9,
+   "ruw": 76.9,
+   "credit": 88.4,
+   "valuation": 73.1,
+   "monetary": 91.7,
+   "behavior": 67.5,
+   "geo": 65.0
+  },
+  {
+   "date": "2007-04-30",
+   "atlas": 68.0,
+   "ruw": 77.5,
+   "credit": 90.2,
+   "valuation": 73.9,
+   "monetary": 86.9,
+   "behavior": 67.5,
+   "geo": 81.4
+  },
+  {
+   "date": "2007-05-31",
+   "atlas": 69.3,
+   "ruw": 77.9,
+   "credit": 90.1,
+   "valuation": 74.3,
+   "monetary": 74.7,
+   "behavior": 67.5,
+   "geo": 74.1
+  },
+  {
+   "date": "2007-06-30",
+   "atlas": 71.5,
+   "ruw": 78.7,
+   "credit": 90.1,
+   "valuation": 73.9,
+   "monetary": 73.7,
+   "behavior": 79.8,
+   "geo": 82.7
+  },
+  {
+   "date": "2007-07-31",
+   "atlas": 72.2,
+   "ruw": 79.4,
+   "credit": 90.6,
+   "valuation": 73.7,
+   "monetary": 82.4,
+   "behavior": 79.8,
+   "geo": 88.9
+  },
+  {
+   "date": "2007-08-31",
+   "atlas": 72.0,
+   "ruw": 79.3,
+   "credit": 92.9,
+   "valuation": 72.2,
+   "monetary": 65.4,
+   "behavior": 79.8,
+   "geo": 56.0
+  },
+  {
+   "date": "2007-09-30",
+   "atlas": 71.5,
+   "ruw": 78.8,
+   "credit": 89.9,
+   "valuation": 68.3,
+   "monetary": 58.8,
+   "behavior": 63.1,
+   "geo": 74.6
+  },
+  {
+   "date": "2007-10-31",
+   "atlas": 68.6,
+   "ruw": 77.8,
+   "credit": 86.2,
+   "valuation": 68.7,
+   "monetary": 64.5,
+   "behavior": 63.1,
+   "geo": 45.0
+  },
+  {
+   "date": "2007-11-30",
+   "atlas": 66.4,
+   "ruw": 77.0,
+   "credit": 83.7,
+   "valuation": 66.6,
+   "monetary": 57.3,
+   "behavior": 63.1,
+   "geo": 50.5
+  },
+  {
+   "date": "2007-12-31",
+   "atlas": 63.9,
+   "ruw": 76.1,
+   "credit": 83.0,
+   "valuation": 63.5,
+   "monetary": 60.3,
+   "behavior": 63.7,
+   "geo": 28.7
+  },
+  {
+   "date": "2008-01-31",
+   "atlas": 60.7,
+   "ruw": 74.5,
+   "credit": 82.0,
+   "valuation": 62.0,
+   "monetary": 42.4,
+   "behavior": 63.7,
+   "geo": 2.6
+  },
+  {
+   "date": "2008-02-29",
+   "atlas": 56.8,
+   "ruw": 72.8,
+   "credit": 85.0,
+   "valuation": 61.7,
+   "monetary": 42.9,
+   "behavior": 63.7,
+   "geo": 24.3
+  },
+  {
+   "date": "2008-03-31",
+   "atlas": 54.8,
+   "ruw": 71.5,
+   "credit": 85.5,
+   "valuation": 54.7,
+   "monetary": 35.7,
+   "behavior": 74.0,
+   "geo": 49.5
+  },
+  {
+   "date": "2008-04-30",
+   "atlas": 51.7,
+   "ruw": 69.9,
+   "credit": 84.4,
+   "valuation": 55.5,
+   "monetary": 29.2,
+   "behavior": 74.0,
+   "geo": 47.6
+  },
+  {
+   "date": "2008-05-31",
+   "atlas": 48.4,
+   "ruw": 68.7,
+   "credit": 83.5,
+   "valuation": 55.8,
+   "monetary": 33.4,
+   "behavior": 74.0,
+   "geo": 52.2
+  },
+  {
+   "date": "2008-06-30",
+   "atlas": 45.3,
+   "ruw": 66.6,
+   "credit": 77.5,
+   "valuation": 49.7,
+   "monetary": 35.7,
+   "behavior": 53.2,
+   "geo": 46.4
+  },
+  {
+   "date": "2008-07-31",
+   "atlas": 41.6,
+   "ruw": 64.2,
+   "credit": 76.6,
+   "valuation": 48.2,
+   "monetary": 30.1,
+   "behavior": 53.2,
+   "geo": 57.4
+  },
+  {
+   "date": "2008-08-31",
+   "atlas": 38.2,
+   "ruw": 62.3,
+   "credit": 74.7,
+   "valuation": 48.5,
+   "monetary": 35.3,
+   "behavior": 53.2,
+   "geo": 41.6
+  },
+  {
+   "date": "2008-09-30",
+   "atlas": 34.2,
+   "ruw": 60.4,
+   "credit": 75.0,
+   "valuation": 40.5,
+   "monetary": 18.1,
+   "behavior": 74.0,
+   "geo": 0.3
+  },
+  {
+   "date": "2008-10-31",
+   "atlas": 31.3,
+   "ruw": 58.6,
+   "credit": 81.6,
+   "valuation": 34.6,
+   "monetary": 5.0,
+   "behavior": 74.0,
+   "geo": 8.8
+  },
+  {
+   "date": "2008-11-30",
+   "atlas": 29.0,
+   "ruw": 57.2,
+   "credit": 88.3,
+   "valuation": 31.7,
+   "monetary": 18.9,
+   "behavior": 74.0,
+   "geo": 1.5
+  },
+  {
+   "date": "2008-12-31",
+   "atlas": 24.6,
+   "ruw": 55.4,
+   "credit": 84.5,
+   "valuation": 23.7,
+   "monetary": 36.3,
+   "behavior": 21.3,
+   "geo": 11.5
+  },
+  {
+   "date": "2009-01-31",
+   "atlas": 21.5,
+   "ruw": 53.9,
+   "credit": 84.5,
+   "valuation": 23.5,
+   "monetary": 25.8,
+   "behavior": 21.3,
+   "geo": 18.9
+  },
+  {
+   "date": "2009-02-28",
+   "atlas": 19.0,
+   "ruw": 52.1,
+   "credit": 84.5,
+   "valuation": 22.3,
+   "monetary": 22.1,
+   "behavior": 21.3,
+   "geo": 12.8
+  },
+  {
+   "date": "2009-03-31",
+   "atlas": 13.2,
+   "ruw": 50.1,
+   "credit": 81.5,
+   "valuation": 20.3,
+   "monetary": 28.6,
+   "behavior": 18.4,
+   "geo": 11.0
+  },
+  {
+   "date": "2009-04-30",
+   "atlas": 8.0,
+   "ruw": 48.2,
+   "credit": 81.4,
+   "valuation": 23.2,
+   "monetary": 17.6,
+   "behavior": 18.4,
+   "geo": 33.9
+  },
+  {
+   "date": "2009-05-31",
+   "atlas": 5.5,
+   "ruw": 46.3,
+   "credit": 81.5,
+   "valuation": 25.6,
+   "monetary": 11.5,
+   "behavior": 18.4,
+   "geo": 40.3
+  },
+  {
+   "date": "2009-06-30",
+   "atlas": 4.2,
+   "ruw": 45.0,
+   "credit": 76.6,
+   "valuation": 26.8,
+   "monetary": 12.2,
+   "behavior": 24.7,
+   "geo": 48.9
+  },
+  {
+   "date": "2009-07-31",
+   "atlas": 3.3,
+   "ruw": 43.5,
+   "credit": 76.6,
+   "valuation": 27.0,
+   "monetary": 13.1,
+   "behavior": 24.7,
+   "geo": 0.9
+  },
+  {
+   "date": "2009-08-31",
+   "atlas": 3.1,
+   "ruw": 42.6,
+   "credit": 76.4,
+   "valuation": 29.8,
+   "monetary": 15.0,
+   "behavior": 24.7,
+   "geo": 69.7
+  },
+  {
+   "date": "2009-09-30",
+   "atlas": 2.8,
+   "ruw": 42.0,
+   "credit": 72.5,
+   "valuation": 31.8,
+   "monetary": 17.1,
+   "behavior": 31.8,
+   "geo": 45.2
+  },
+  {
+   "date": "2009-10-31",
+   "atlas": 2.8,
+   "ruw": 41.5,
+   "credit": 69.7,
+   "valuation": 32.5,
+   "monetary": 13.7,
+   "behavior": 31.8,
+   "geo": 46.3
+  },
+  {
+   "date": "2009-11-30",
+   "atlas": 2.5,
+   "ruw": 40.4,
+   "credit": 64.4,
+   "valuation": 33.1,
+   "monetary": 18.4,
+   "behavior": 31.8,
+   "geo": 25.6
+  },
+  {
+   "date": "2009-12-31",
+   "atlas": 2.2,
+   "ruw": 39.5,
+   "credit": 49.0,
+   "valuation": 34.7,
+   "monetary": 4.1,
+   "behavior": 34.3,
+   "geo": 25.3
+  },
+  {
+   "date": "2010-01-31",
+   "atlas": 2.0,
+   "ruw": 38.7,
+   "credit": 46.1,
+   "valuation": 35.3,
+   "monetary": 8.7,
+   "behavior": 34.3,
+   "geo": 20.5
+  },
+  {
+   "date": "2010-02-28",
+   "atlas": 1.7,
+   "ruw": 38.0,
+   "credit": 47.7,
+   "valuation": 34.5,
+   "monetary": 11.2,
+   "behavior": 34.3,
+   "geo": 14.5
+  },
+  {
+   "date": "2010-03-31",
+   "atlas": 1.4,
+   "ruw": 37.2,
+   "credit": 31.6,
+   "valuation": 36.0,
+   "monetary": 6.6,
+   "behavior": 35.5,
+   "geo": 49.2
+  },
+  {
+   "date": "2010-04-30",
+   "atlas": 0.9,
+   "ruw": 36.6,
+   "credit": 32.4,
+   "valuation": 36.9,
+   "monetary": 11.0,
+   "behavior": 35.5,
+   "geo": 57.6
+  },
+  {
+   "date": "2010-05-31",
+   "atlas": 0.1,
+   "ruw": 35.8,
+   "credit": 32.8,
+   "valuation": 34.9,
+   "monetary": 21.5,
+   "behavior": 35.5,
+   "geo": 10.2
+  },
+  {
+   "date": "2010-06-30",
+   "atlas": 0.1,
+   "ruw": 34.4,
+   "credit": 10.9,
+   "valuation": 30.8,
+   "monetary": 29.6,
+   "behavior": 34.3,
+   "geo": 17.4
+  },
+  {
+   "date": "2010-07-31",
+   "atlas": 0.1,
+   "ruw": 33.3,
+   "credit": 10.6,
+   "valuation": 30.1,
+   "monetary": 29.8,
+   "behavior": 34.3,
+   "geo": 15.7
+  },
+  {
+   "date": "2010-08-31",
+   "atlas": 0.1,
+   "ruw": 31.8,
+   "credit": 12.6,
+   "valuation": 29.7,
+   "monetary": 40.4,
+   "behavior": 34.3,
+   "geo": 12.4
+  },
+  {
+   "date": "2010-09-30",
+   "atlas": 0.1,
+   "ruw": 30.7,
+   "credit": 12.6,
+   "valuation": 33.2,
+   "monetary": 39.5,
+   "behavior": 39.4,
+   "geo": 29.3
+  },
+  {
+   "date": "2010-10-31",
+   "atlas": 0.1,
+   "ruw": 29.5,
+   "credit": 13.1,
+   "valuation": 34.0,
+   "monetary": 35.7,
+   "behavior": 39.4,
+   "geo": 1.3
+  },
+  {
+   "date": "2010-11-30",
+   "atlas": 0.1,
+   "ruw": 28.6,
+   "credit": 13.0,
+   "valuation": 35.2,
+   "monetary": 32.6,
+   "behavior": 39.4,
+   "geo": 26.9
+  },
+  {
+   "date": "2010-12-31",
+   "atlas": 0.1,
+   "ruw": 28.2,
+   "credit": 12.3,
+   "valuation": 39.1,
+   "monetary": 21.8,
+   "behavior": 47.3,
+   "geo": 21.5
+  },
+  {
+   "date": "2011-01-31",
+   "atlas": 0.1,
+   "ruw": 28.1,
+   "credit": 13.2,
+   "valuation": 39.6,
+   "monetary": 20.1,
+   "behavior": 47.3,
+   "geo": 43.6
+  },
+  {
+   "date": "2011-02-28",
+   "atlas": 0.1,
+   "ruw": 28.0,
+   "credit": 12.5,
+   "valuation": 40.3,
+   "monetary": 20.3,
+   "behavior": 47.3,
+   "geo": 53.0
+  },
+  {
+   "date": "2011-03-31",
+   "atlas": 0.5,
+   "ruw": 28.2,
+   "credit": 12.9,
+   "valuation": 39.7,
+   "monetary": 17.8,
+   "behavior": 60.6,
+   "geo": 54.1
+  },
+  {
+   "date": "2011-04-30",
+   "atlas": 0.8,
+   "ruw": 28.3,
+   "credit": 12.7,
+   "valuation": 39.9,
+   "monetary": 21.0,
+   "behavior": 60.6,
+   "geo": 56.1
+  },
+  {
+   "date": "2011-05-31",
+   "atlas": 1.1,
+   "ruw": 28.8,
+   "credit": 12.2,
+   "valuation": 39.5,
+   "monetary": 26.8,
+   "behavior": 60.6,
+   "geo": 59.7
+  },
+  {
+   "date": "2011-06-30",
+   "atlas": 1.2,
+   "ruw": 29.4,
+   "credit": 13.5,
+   "valuation": 37.2,
+   "monetary": 24.0,
+   "behavior": 56.0,
+   "geo": 37.2
+  },
+  {
+   "date": "2011-07-31",
+   "atlas": 1.5,
+   "ruw": 30.0,
+   "credit": 17.5,
+   "valuation": 37.8,
+   "monetary": 32.8,
+   "behavior": 56.0,
+   "geo": 1.2
+  },
+  {
+   "date": "2011-08-31",
+   "atlas": 1.8,
+   "ruw": 30.8,
+   "credit": 20.3,
+   "valuation": 32.9,
+   "monetary": 44.5,
+   "behavior": 56.0,
+   "geo": 30.0
+  },
+  {
+   "date": "2011-09-30",
+   "atlas": 1.9,
+   "ruw": 31.2,
+   "credit": 19.8,
+   "valuation": 28.0,
+   "monetary": 49.8,
+   "behavior": 39.1,
+   "geo": 45.3
+  },
+  {
+   "date": "2011-10-31",
+   "atlas": 2.2,
+   "ruw": 31.9,
+   "credit": 19.8,
+   "valuation": 29.2,
+   "monetary": 45.6,
+   "behavior": 39.1,
+   "geo": 45.2
+  },
+  {
+   "date": "2011-11-30",
+   "atlas": 2.4,
+   "ruw": 32.4,
+   "credit": 20.6,
+   "valuation": 29.0,
+   "monetary": 47.0,
+   "behavior": 39.1,
+   "geo": 51.2
+  },
+  {
+   "date": "2011-12-31",
+   "atlas": 2.5,
+   "ruw": 32.7,
+   "credit": 22.0,
+   "valuation": 32.2,
+   "monetary": 50.3,
+   "behavior": 35.2,
+   "geo": 17.7
+  },
+  {
+   "date": "2012-01-31",
+   "atlas": 2.7,
+   "ruw": 33.3,
+   "credit": 23.0,
+   "valuation": 33.1,
+   "monetary": 51.7,
+   "behavior": 35.2,
+   "geo": 50.1
+  },
+  {
+   "date": "2012-02-29",
+   "atlas": 3.0,
+   "ruw": 33.8,
+   "credit": 22.8,
+   "valuation": 33.8,
+   "monetary": 49.2,
+   "behavior": 35.2,
+   "geo": 71.0
+  },
+  {
+   "date": "2012-03-31",
+   "atlas": 3.1,
+   "ruw": 34.2,
+   "credit": 23.4,
+   "valuation": 36.0,
+   "monetary": 44.2,
+   "behavior": 44.2,
+   "geo": 53.9
+  },
+  {
+   "date": "2012-04-30",
+   "atlas": 3.4,
+   "ruw": 34.5,
+   "credit": 23.7,
+   "valuation": 35.3,
+   "monetary": 50.2,
+   "behavior": 44.2,
+   "geo": 43.5
+  },
+  {
+   "date": "2012-05-31",
+   "atlas": 3.5,
+   "ruw": 34.8,
+   "credit": 23.9,
+   "valuation": 33.5,
+   "monetary": 55.3,
+   "behavior": 44.2,
+   "geo": 44.4
+  },
+  {
+   "date": "2012-06-30",
+   "atlas": 3.7,
+   "ruw": 35.0,
+   "credit": 24.3,
+   "valuation": 31.2,
+   "monetary": 54.2,
+   "behavior": 41.0,
+   "geo": 10.9
+  },
+  {
+   "date": "2012-07-31",
+   "atlas": 3.8,
+   "ruw": 35.5,
+   "credit": 22.0,
+   "valuation": 31.6,
+   "monetary": 57.0,
+   "behavior": 41.0,
+   "geo": 44.4
+  },
+  {
+   "date": "2012-08-31",
+   "atlas": 3.8,
+   "ruw": 35.2,
+   "credit": 18.5,
+   "valuation": 32.4,
+   "monetary": 55.6,
+   "behavior": 41.0,
+   "geo": 3.7
+  },
+  {
+   "date": "2012-09-30",
+   "atlas": 4.0,
+   "ruw": 35.2,
+   "credit": 20.2,
+   "valuation": 37.0,
+   "monetary": 54.1,
+   "behavior": 43.5,
+   "geo": 13.4
+  },
+  {
+   "date": "2012-10-31",
+   "atlas": 4.1,
+   "ruw": 35.4,
+   "credit": 20.5,
+   "valuation": 36.7,
+   "monetary": 52.7,
+   "behavior": 43.5,
+   "geo": 34.0
+  },
+  {
+   "date": "2012-11-30",
+   "atlas": 4.1,
+   "ruw": 35.4,
+   "credit": 21.5,
+   "valuation": 35.5,
+   "monetary": 54.0,
+   "behavior": 43.5,
+   "geo": 5.5
+  },
+  {
+   "date": "2012-12-31",
+   "atlas": 4.5,
+   "ruw": 35.6,
+   "credit": 23.8,
+   "valuation": 36.1,
+   "monetary": 50.7,
+   "behavior": 46.6,
+   "geo": 6.2
+  },
+  {
+   "date": "2013-01-31",
+   "atlas": 4.7,
+   "ruw": 35.7,
+   "credit": 22.8,
+   "valuation": 37.5,
+   "monetary": 46.1,
+   "behavior": 46.6,
+   "geo": 39.5
+  },
+  {
+   "date": "2013-02-28",
+   "atlas": 4.1,
+   "ruw": 35.4,
+   "credit": 21.3,
+   "valuation": 38.0,
+   "monetary": 49.3,
+   "behavior": 46.6,
+   "geo": 9.2
+  },
+  {
+   "date": "2013-03-31",
+   "atlas": 4.7,
+   "ruw": 35.6,
+   "credit": 22.6,
+   "valuation": 42.7,
+   "monetary": 48.3,
+   "behavior": 56.6,
+   "geo": 31.1
+  },
+  {
+   "date": "2013-04-30",
+   "atlas": 5.2,
+   "ruw": 36.0,
+   "credit": 22.7,
+   "valuation": 42.3,
+   "monetary": 51.9,
+   "behavior": 56.6,
+   "geo": 56.7
+  },
+  {
+   "date": "2013-05-31",
+   "atlas": 5.8,
+   "ruw": 36.3,
+   "credit": 21.8,
+   "valuation": 43.7,
+   "monetary": 41.5,
+   "behavior": 56.6,
+   "geo": 65.6
+  },
+  {
+   "date": "2013-06-30",
+   "atlas": 6.4,
+   "ruw": 36.6,
+   "credit": 21.2,
+   "valuation": 45.6,
+   "monetary": 33.0,
+   "behavior": 59.1,
+   "geo": 40.9
+  },
+  {
+   "date": "2013-07-31",
+   "atlas": 6.7,
+   "ruw": 36.8,
+   "credit": 20.4,
+   "valuation": 46.9,
+   "monetary": 30.9,
+   "behavior": 59.1,
+   "geo": 57.7
+  },
+  {
+   "date": "2013-08-31",
+   "atlas": 7.2,
+   "ruw": 37.3,
+   "credit": 20.8,
+   "valuation": 47.1,
+   "monetary": 27.0,
+   "behavior": 59.1,
+   "geo": 47.7
+  },
+  {
+   "date": "2013-09-30",
+   "atlas": 7.4,
+   "ruw": 37.5,
+   "credit": 22.6,
+   "valuation": 48.9,
+   "monetary": 29.8,
+   "behavior": 56.5,
+   "geo": 29.6
+  },
+  {
+   "date": "2013-10-31",
+   "atlas": 7.8,
+   "ruw": 38.0,
+   "credit": 24.4,
+   "valuation": 48.9,
+   "monetary": 31.9,
+   "behavior": 56.5,
+   "geo": 64.9
+  },
+  {
+   "date": "2013-11-30",
+   "atlas": 8.1,
+   "ruw": 38.4,
+   "credit": 21.9,
+   "valuation": 49.4,
+   "monetary": 28.4,
+   "behavior": 56.5,
+   "geo": 51.5
+  },
+  {
+   "date": "2013-12-31",
+   "atlas": 8.5,
+   "ruw": 38.6,
+   "credit": 20.5,
+   "valuation": 51.6,
+   "monetary": 22.1,
+   "behavior": 63.5,
+   "geo": 38.2
+  },
+  {
+   "date": "2014-01-31",
+   "atlas": 8.8,
+   "ruw": 39.1,
+   "credit": 21.5,
+   "valuation": 51.5,
+   "monetary": 29.7,
+   "behavior": 63.5,
+   "geo": 76.8
+  },
+  {
+   "date": "2014-02-28",
+   "atlas": 9.3,
+   "ruw": 39.8,
+   "credit": 23.9,
+   "valuation": 51.0,
+   "monetary": 30.6,
+   "behavior": 63.5,
+   "geo": 62.8
+  },
+  {
+   "date": "2014-03-31",
+   "atlas": 9.5,
+   "ruw": 40.2,
+   "credit": 22.4,
+   "valuation": 52.2,
+   "monetary": 28.7,
+   "behavior": 63.3,
+   "geo": 76.2
+  },
+  {
+   "date": "2014-04-30",
+   "atlas": 9.7,
+   "ruw": 40.3,
+   "credit": 21.8,
+   "valuation": 52.0,
+   "monetary": 29.9,
+   "behavior": 63.3,
+   "geo": 81.3
+  },
+  {
+   "date": "2014-05-31",
+   "atlas": 10.0,
+   "ruw": 40.4,
+   "credit": 22.0,
+   "valuation": 51.9,
+   "monetary": 35.1,
+   "behavior": 63.3,
+   "geo": 67.8
+  },
+  {
+   "date": "2014-06-30",
+   "atlas": 10.1,
+   "ruw": 41.1,
+   "credit": 22.9,
+   "valuation": 53.5,
+   "monetary": 33.6,
+   "behavior": 72.5,
+   "geo": 76.3
+  },
+  {
+   "date": "2014-07-31",
+   "atlas": 10.7,
+   "ruw": 41.5,
+   "credit": 23.3,
+   "valuation": 53.6,
+   "monetary": 31.9,
+   "behavior": 72.5,
+   "geo": 53.2
+  },
+  {
+   "date": "2014-08-31",
+   "atlas": 11.1,
+   "ruw": 42.4,
+   "credit": 23.0,
+   "valuation": 53.1,
+   "monetary": 38.3,
+   "behavior": 72.5,
+   "geo": 82.7
+  },
+  {
+   "date": "2014-09-30",
+   "atlas": 11.7,
+   "ruw": 43.2,
+   "credit": 22.9,
+   "valuation": 53.9,
+   "monetary": 33.0,
+   "behavior": 71.6,
+   "geo": 77.9
+  },
+  {
+   "date": "2014-10-31",
+   "atlas": 11.8,
+   "ruw": 43.3,
+   "credit": 21.3,
+   "valuation": 52.6,
+   "monetary": 37.7,
+   "behavior": 71.6,
+   "geo": 46.6
+  },
+  {
+   "date": "2014-11-30",
+   "atlas": 12.3,
+   "ruw": 44.2,
+   "credit": 23.4,
+   "valuation": 54.2,
+   "monetary": 42.7,
+   "behavior": 71.6,
+   "geo": 76.9
+  },
+  {
+   "date": "2014-12-31",
+   "atlas": 12.6,
+   "ruw": 44.8,
+   "credit": 26.3,
+   "valuation": 54.7,
+   "monetary": 43.1,
+   "behavior": 67.4,
+   "geo": 37.7
+  },
+  {
+   "date": "2015-01-31",
+   "atlas": 13.3,
+   "ruw": 45.3,
+   "credit": 29.1,
+   "valuation": 53.7,
+   "monetary": 53.0,
+   "behavior": 67.4,
+   "geo": 54.4
+  },
+  {
+   "date": "2015-02-28",
+   "atlas": 14.0,
+   "ruw": 45.8,
+   "credit": 29.8,
+   "valuation": 54.3,
+   "monetary": 46.5,
+   "behavior": 67.4,
+   "geo": 61.7
+  },
+  {
+   "date": "2015-03-31",
+   "atlas": 14.5,
+   "ruw": 46.2,
+   "credit": 29.3,
+   "valuation": 53.8,
+   "monetary": 48.1,
+   "behavior": 67.2,
+   "geo": 52.0
+  },
+  {
+   "date": "2015-04-30",
+   "atlas": 15.3,
+   "ruw": 46.7,
+   "credit": 29.1,
+   "valuation": 53.7,
+   "monetary": 44.7,
+   "behavior": 67.2,
+   "geo": 78.1
+  },
+  {
+   "date": "2015-05-31",
+   "atlas": 15.9,
+   "ruw": 46.9,
+   "credit": 27.8,
+   "valuation": 54.3,
+   "monetary": 43.6,
+   "behavior": 67.2,
+   "geo": 52.8
+  },
+  {
+   "date": "2015-06-30",
+   "atlas": 15.6,
+   "ruw": 46.7,
+   "credit": 27.7,
+   "valuation": 55.4,
+   "monetary": 37.9,
+   "behavior": 67.1,
+   "geo": 38.8
+  },
+  {
+   "date": "2015-07-31",
+   "atlas": 16.7,
+   "ruw": 47.2,
+   "credit": 27.2,
+   "valuation": 55.1,
+   "monetary": 43.8,
+   "behavior": 67.1,
+   "geo": 83.8
+  },
+  {
+   "date": "2015-08-31",
+   "atlas": 16.4,
+   "ruw": 47.0,
+   "credit": 27.6,
+   "valuation": 54.0,
+   "monetary": 43.5,
+   "behavior": 67.1,
+   "geo": 42.0
+  },
+  {
+   "date": "2015-09-30",
+   "atlas": 16.1,
+   "ruw": 46.9,
+   "credit": 29.2,
+   "valuation": 53.5,
+   "monetary": 45.4,
+   "behavior": 56.1,
+   "geo": 56.7
+  },
+  {
+   "date": "2015-10-31",
+   "atlas": 16.9,
+   "ruw": 47.2,
+   "credit": 27.9,
+   "valuation": 54.1,
+   "monetary": 44.8,
+   "behavior": 56.1,
+   "geo": 74.3
+  },
+  {
+   "date": "2015-11-30",
+   "atlas": 16.9,
+   "ruw": 47.1,
+   "credit": 28.1,
+   "valuation": 55.4,
+   "monetary": 47.7,
+   "behavior": 56.1,
+   "geo": 67.2
+  },
+  {
+   "date": "2015-12-31",
+   "atlas": 17.0,
+   "ruw": 47.2,
+   "credit": 26.8,
+   "valuation": 56.8,
+   "monetary": 44.1,
+   "behavior": 52.9,
+   "geo": 67.9
+  },
+  {
+   "date": "2016-01-31",
+   "atlas": 15.7,
+   "ruw": 46.9,
+   "credit": 25.8,
+   "valuation": 54.7,
+   "monetary": 55.9,
+   "behavior": 52.9,
+   "geo": 48.6
+  },
+  {
+   "date": "2016-02-29",
+   "atlas": 15.5,
+   "ruw": 46.8,
+   "credit": 26.0,
+   "valuation": 53.8,
+   "monetary": 60.0,
+   "behavior": 52.9,
+   "geo": 64.3
+  },
+  {
+   "date": "2016-03-31",
+   "atlas": 15.9,
+   "ruw": 46.9,
+   "credit": 28.4,
+   "valuation": 55.7,
+   "monetary": 57.0,
+   "behavior": 51.6,
+   "geo": 79.4
+  },
+  {
+   "date": "2016-04-30",
+   "atlas": 15.8,
+   "ruw": 46.8,
+   "credit": 28.6,
+   "valuation": 56.2,
+   "monetary": 55.8,
+   "behavior": 51.6,
+   "geo": 74.1
+  },
+  {
+   "date": "2016-05-31",
+   "atlas": 17.0,
+   "ruw": 47.0,
+   "credit": 29.8,
+   "valuation": 55.9,
+   "monetary": 58.6,
+   "behavior": 51.6,
+   "geo": 72.8
+  },
+  {
+   "date": "2016-06-30",
+   "atlas": 18.1,
+   "ruw": 47.4,
+   "credit": 30.3,
+   "valuation": 58.0,
+   "monetary": 63.2,
+   "behavior": 55.4,
+   "geo": 47.4
+  },
+  {
+   "date": "2016-07-31",
+   "atlas": 18.0,
+   "ruw": 47.4,
+   "credit": 31.3,
+   "valuation": 58.6,
+   "monetary": 64.1,
+   "behavior": 55.4,
+   "geo": 38.9
+  },
+  {
+   "date": "2016-08-31",
+   "atlas": 18.8,
+   "ruw": 47.9,
+   "credit": 31.4,
+   "valuation": 59.2,
+   "monetary": 62.7,
+   "behavior": 55.4,
+   "geo": 73.7
+  },
+  {
+   "date": "2016-09-30",
+   "atlas": 19.4,
+   "ruw": 48.6,
+   "credit": 29.9,
+   "valuation": 59.9,
+   "monetary": 61.5,
+   "behavior": 61.7,
+   "geo": 79.6
+  },
+  {
+   "date": "2016-10-31",
+   "atlas": 19.8,
+   "ruw": 48.9,
+   "credit": 29.7,
+   "valuation": 60.1,
+   "monetary": 58.0,
+   "behavior": 61.7,
+   "geo": 47.2
+  },
+  {
+   "date": "2016-11-30",
+   "atlas": 19.9,
+   "ruw": 49.1,
+   "credit": 29.3,
+   "valuation": 61.5,
+   "monetary": 49.2,
+   "behavior": 61.7,
+   "geo": 64.6
+  },
+  {
+   "date": "2016-12-31",
+   "atlas": 19.8,
+   "ruw": 49.0,
+   "credit": 26.1,
+   "valuation": 62.7,
+   "monetary": 48.5,
+   "behavior": 54.6,
+   "geo": 35.1
+  },
+  {
+   "date": "2017-01-31",
+   "atlas": 19.7,
+   "ruw": 48.8,
+   "credit": 23.0,
+   "valuation": 62.6,
+   "monetary": 48.7,
+   "behavior": 54.6,
+   "geo": 31.6
+  },
+  {
+   "date": "2017-02-28",
+   "atlas": 19.2,
+   "ruw": 48.5,
+   "credit": 21.8,
+   "valuation": 62.8,
+   "monetary": 50.8,
+   "behavior": 54.6,
+   "geo": 40.6
+  },
+  {
+   "date": "2017-03-31",
+   "atlas": 18.8,
+   "ruw": 48.2,
+   "credit": 24.0,
+   "valuation": 63.8,
+   "monetary": 54.8,
+   "behavior": 63.5,
+   "geo": 9.9
+  },
+  {
+   "date": "2017-04-30",
+   "atlas": 18.6,
+   "ruw": 47.9,
+   "credit": 24.1,
+   "valuation": 63.4,
+   "monetary": 58.9,
+   "behavior": 63.5,
+   "geo": 9.4
+  },
+  {
+   "date": "2017-05-31",
+   "atlas": 18.2,
+   "ruw": 47.8,
+   "credit": 24.8,
+   "valuation": 63.6,
+   "monetary": 63.7,
+   "behavior": 63.5,
+   "geo": 23.9
+  },
+  {
+   "date": "2017-06-30",
+   "atlas": 18.9,
+   "ruw": 47.9,
+   "credit": 25.0,
+   "valuation": 65.3,
+   "monetary": 62.4,
+   "behavior": 69.1,
+   "geo": 43.1
+  },
+  {
+   "date": "2017-07-31",
+   "atlas": 19.5,
+   "ruw": 48.2,
+   "credit": 24.6,
+   "valuation": 65.6,
+   "monetary": 63.9,
+   "behavior": 69.1,
+   "geo": 55.7
+  },
+  {
+   "date": "2017-08-31",
+   "atlas": 19.6,
+   "ruw": 48.5,
+   "credit": 23.2,
+   "valuation": 65.3,
+   "monetary": 66.2,
+   "behavior": 69.1,
+   "geo": 76.8
+  },
+  {
+   "date": "2017-09-30",
+   "atlas": 20.3,
+   "ruw": 48.7,
+   "credit": 30.3,
+   "valuation": 67.2,
+   "monetary": 62.6,
+   "behavior": 69.9,
+   "geo": 75.8
+  },
+  {
+   "date": "2017-10-31",
+   "atlas": 21.9,
+   "ruw": 49.3,
+   "credit": 30.5,
+   "valuation": 67.6,
+   "monetary": 64.1,
+   "behavior": 69.9,
+   "geo": 72.5
+  },
+  {
+   "date": "2017-11-30",
+   "atlas": 22.8,
+   "ruw": 49.6,
+   "credit": 28.9,
+   "valuation": 67.7,
+   "monetary": 65.7,
+   "behavior": 69.9,
+   "geo": 45.8
+  },
+  {
+   "date": "2017-12-31",
+   "atlas": 28.7,
+   "ruw": 51.0,
+   "credit": 53.5,
+   "valuation": 68.5,
+   "monetary": 68.6,
+   "behavior": 78.2,
+   "geo": 21.8
+  },
+  {
+   "date": "2018-01-31",
+   "atlas": 31.4,
+   "ruw": 52.7,
+   "credit": 51.9,
+   "valuation": 69.0,
+   "monetary": 62.9,
+   "behavior": 78.2,
+   "geo": 59.9
+  },
+  {
+   "date": "2018-02-28",
+   "atlas": 33.4,
+   "ruw": 54.5,
+   "credit": 51.0,
+   "valuation": 68.9,
+   "monetary": 64.3,
+   "behavior": 78.2,
+   "geo": 74.2
+  },
+  {
+   "date": "2018-03-31",
+   "atlas": 37.3,
+   "ruw": 56.2,
+   "credit": 50.4,
+   "valuation": 68.8,
+   "monetary": 69.0,
+   "behavior": 80.8,
+   "geo": 62.9
+  },
+  {
+   "date": "2018-04-30",
+   "atlas": 40.3,
+   "ruw": 57.7,
+   "credit": 49.7,
+   "valuation": 68.6,
+   "monetary": 67.4,
+   "behavior": 80.8,
+   "geo": 52.4
+  },
+  {
+   "date": "2018-05-31",
+   "atlas": 42.6,
+   "ruw": 59.1,
+   "credit": 49.4,
+   "valuation": 68.8,
+   "monetary": 71.3,
+   "behavior": 80.8,
+   "geo": 56.3
+  },
+  {
+   "date": "2018-06-30",
+   "atlas": 44.2,
+   "ruw": 60.2,
+   "credit": 54.4,
+   "valuation": 70.4,
+   "monetary": 70.9,
+   "behavior": 78.1,
+   "geo": 40.7
+  },
+  {
+   "date": "2018-07-31",
+   "atlas": 45.5,
+   "ruw": 61.2,
+   "credit": 54.0,
+   "valuation": 70.4,
+   "monetary": 70.6,
+   "behavior": 78.1,
+   "geo": 50.3
+  },
+  {
+   "date": "2018-08-31",
+   "atlas": 47.0,
+   "ruw": 62.0,
+   "credit": 54.3,
+   "valuation": 70.6,
+   "monetary": 75.9,
+   "behavior": 78.1,
+   "geo": 37.3
+  },
+  {
+   "date": "2018-09-30",
+   "atlas": 49.9,
+   "ruw": 62.9,
+   "credit": 56.1,
+   "valuation": 71.7,
+   "monetary": 73.3,
+   "behavior": 78.4,
+   "geo": 53.8
+  },
+  {
+   "date": "2018-10-31",
+   "atlas": 50.9,
+   "ruw": 63.8,
+   "credit": 55.3,
+   "valuation": 71.3,
+   "monetary": 74.8,
+   "behavior": 78.4,
+   "geo": 56.1
+  },
+  {
+   "date": "2018-11-30",
+   "atlas": 51.7,
+   "ruw": 64.7,
+   "credit": 55.7,
+   "valuation": 71.0,
+   "monetary": 78.2,
+   "behavior": 78.4,
+   "geo": 32.3
+  },
+  {
+   "date": "2018-12-31",
+   "atlas": 52.5,
+   "ruw": 64.9,
+   "credit": 58.5,
+   "valuation": 64.6,
+   "monetary": 86.2,
+   "behavior": 62.8,
+   "geo": 28.0
+  },
+  {
+   "date": "2019-01-31",
+   "atlas": 52.6,
+   "ruw": 65.0,
+   "credit": 61.0,
+   "valuation": 64.5,
+   "monetary": 86.5,
+   "behavior": 62.8,
+   "geo": 35.6
+  },
+  {
+   "date": "2019-02-28",
+   "atlas": 52.4,
+   "ruw": 64.9,
+   "credit": 60.9,
+   "valuation": 64.9,
+   "monetary": 85.3,
+   "behavior": 62.8,
+   "geo": 36.4
+  },
+  {
+   "date": "2019-03-31",
+   "atlas": 52.8,
+   "ruw": 65.0,
+   "credit": 59.4,
+   "valuation": 67.8,
+   "monetary": 92.0,
+   "behavior": 65.5,
+   "geo": 33.4
+  },
+  {
+   "date": "2019-04-30",
+   "atlas": 53.2,
+   "ruw": 65.4,
+   "credit": 59.4,
+   "valuation": 67.9,
+   "monetary": 89.4,
+   "behavior": 65.5,
+   "geo": 59.9
+  },
+  {
+   "date": "2019-05-31",
+   "atlas": 53.8,
+   "ruw": 65.8,
+   "credit": 61.3,
+   "valuation": 67.3,
+   "monetary": 95.4,
+   "behavior": 65.5,
+   "geo": 49.7
+  },
+  {
+   "date": "2019-06-30",
+   "atlas": 54.4,
+   "ruw": 66.2,
+   "credit": 63.3,
+   "valuation": 68.2,
+   "monetary": 93.5,
+   "behavior": 68.8,
+   "geo": 41.3
+  },
+  {
+   "date": "2019-07-31",
+   "atlas": 54.7,
+   "ruw": 66.6,
+   "credit": 63.7,
+   "valuation": 67.5,
+   "monetary": 92.1,
+   "behavior": 68.8,
+   "geo": 46.0
+  },
+  {
+   "date": "2019-08-31",
+   "atlas": 55.3,
+   "ruw": 67.0,
+   "credit": 64.8,
+   "valuation": 66.8,
+   "monetary": 98.5,
+   "behavior": 68.8,
+   "geo": 33.5
+  },
+  {
+   "date": "2019-09-30",
+   "atlas": 56.0,
+   "ruw": 67.2,
+   "credit": 66.5,
+   "valuation": 67.0,
+   "monetary": 93.9,
+   "behavior": 67.3,
+   "geo": 43.1
+  },
+  {
+   "date": "2019-10-31",
+   "atlas": 56.2,
+   "ruw": 67.3,
+   "credit": 69.2,
+   "valuation": 66.7,
+   "monetary": 85.0,
+   "behavior": 67.3,
+   "geo": 34.3
+  },
+  {
+   "date": "2019-11-30",
+   "atlas": 56.8,
+   "ruw": 67.9,
+   "credit": 69.8,
+   "valuation": 67.6,
+   "monetary": 84.1,
+   "behavior": 67.3,
+   "geo": 81.9
+  },
+  {
+   "date": "2019-12-31",
+   "atlas": 57.5,
+   "ruw": 68.4,
+   "credit": 67.5,
+   "valuation": 69.5,
+   "monetary": 79.7,
+   "behavior": 71.9,
+   "geo": 45.8
+  },
+  {
+   "date": "2020-01-31",
+   "atlas": 58.2,
+   "ruw": 68.9,
+   "credit": 66.8,
+   "valuation": 69.5,
+   "monetary": 89.2,
+   "behavior": 71.9,
+   "geo": 38.5
+  },
+  {
+   "date": "2020-02-29",
+   "atlas": 58.5,
+   "ruw": 69.1,
+   "credit": 68.0,
+   "valuation": 68.6,
+   "monetary": 91.9,
+   "behavior": 71.9,
+   "geo": 7.8
+  },
+  {
+   "date": "2020-03-31",
+   "atlas": 58.2,
+   "ruw": 68.9,
+   "credit": 82.5,
+   "valuation": 56.2,
+   "monetary": 75.3,
+   "behavior": 64.9,
+   "geo": 0.3
+  },
+  {
+   "date": "2020-04-30",
+   "atlas": 57.3,
+   "ruw": 68.6,
+   "credit": 83.0,
+   "valuation": 56.6,
+   "monetary": 76.0,
+   "behavior": 64.9,
+   "geo": 0.5
+  },
+  {
+   "date": "2020-05-31",
+   "atlas": 57.0,
+   "ruw": 68.3,
+   "credit": 83.0,
+   "valuation": 58.0,
+   "monetary": 77.1,
+   "behavior": 64.9,
+   "geo": 0.5
+  },
+  {
+   "date": "2020-06-30",
+   "atlas": 56.7,
+   "ruw": 68.2,
+   "credit": 85.6,
+   "valuation": 57.5,
+   "monetary": 77.2,
+   "behavior": 75.0,
+   "geo": 2.1
+  },
+  {
+   "date": "2020-07-31",
+   "atlas": 56.6,
+   "ruw": 68.0,
+   "credit": 85.6,
+   "valuation": 57.8,
+   "monetary": 78.1,
+   "behavior": 75.0,
+   "geo": 1.3
+  },
+  {
+   "date": "2020-08-31",
+   "atlas": 56.6,
+   "ruw": 68.1,
+   "credit": 85.6,
+   "valuation": 58.7,
+   "monetary": 74.9,
+   "behavior": 75.0,
+   "geo": 28.5
+  },
+  {
+   "date": "2020-09-30",
+   "atlas": 57.2,
+   "ruw": 68.3,
+   "credit": 84.5,
+   "valuation": 65.8,
+   "monetary": 75.5,
+   "behavior": 83.7,
+   "geo": 19.1
+  },
+  {
+   "date": "2020-10-31",
+   "atlas": 57.7,
+   "ruw": 68.6,
+   "credit": 84.5,
+   "valuation": 66.5,
+   "monetary": 71.4,
+   "behavior": 83.7,
+   "geo": 24.7
+  },
+  {
+   "date": "2020-11-30",
+   "atlas": 57.8,
+   "ruw": 68.7,
+   "credit": 84.5,
+   "valuation": 67.1,
+   "monetary": 72.6,
+   "behavior": 83.7,
+   "geo": 32.7
+  },
+  {
+   "date": "2020-12-31",
+   "atlas": 58.9,
+   "ruw": 69.1,
+   "credit": 83.9,
+   "valuation": 74.9,
+   "monetary": 70.8,
+   "behavior": 97.3,
+   "geo": 2.2
+  },
+  {
+   "date": "2021-01-31",
+   "atlas": 59.5,
+   "ruw": 69.5,
+   "credit": 83.9,
+   "valuation": 75.5,
+   "monetary": 65.2,
+   "behavior": 97.3,
+   "geo": 21.5
+  },
+  {
+   "date": "2021-02-28",
+   "atlas": 61.3,
+   "ruw": 70.0,
+   "credit": 83.9,
+   "valuation": 76.2,
+   "monetary": 57.3,
+   "behavior": 97.3,
+   "geo": 23.3
+  },
+  {
+   "date": "2021-03-31",
+   "atlas": 62.7,
+   "ruw": 70.8,
+   "credit": 84.9,
+   "valuation": 73.5,
+   "monetary": 50.5,
+   "behavior": 98.3,
+   "geo": 40.2
+  },
+  {
+   "date": "2021-04-30",
+   "atlas": 64.2,
+   "ruw": 71.6,
+   "credit": 84.2,
+   "valuation": 74.0,
+   "monetary": 52.0,
+   "behavior": 98.3,
+   "geo": 44.6
+  },
+  {
+   "date": "2021-05-31",
+   "atlas": 65.3,
+   "ruw": 72.5,
+   "credit": 78.5,
+   "valuation": 73.9,
+   "monetary": 53.9,
+   "behavior": 98.3,
+   "geo": 65.6
+  },
+  {
+   "date": "2021-06-30",
+   "atlas": 65.9,
+   "ruw": 73.1,
+   "credit": 77.4,
+   "valuation": 82.0,
+   "monetary": 57.6,
+   "behavior": 98.1,
+   "geo": 41.5
+  },
+  {
+   "date": "2021-07-31",
+   "atlas": 67.7,
+   "ruw": 73.8,
+   "credit": 77.4,
+   "valuation": 81.8,
+   "monetary": 62.9,
+   "behavior": 98.1,
+   "geo": 47.5
+  },
+  {
+   "date": "2021-08-31",
+   "atlas": 68.2,
+   "ruw": 74.2,
+   "credit": 78.6,
+   "valuation": 81.8,
+   "monetary": 60.9,
+   "behavior": 98.1,
+   "geo": 30.4
+  },
+  {
+   "date": "2021-09-30",
+   "atlas": 68.5,
+   "ruw": 74.4,
+   "credit": 78.3,
+   "valuation": 84.9,
+   "monetary": 55.5,
+   "behavior": 96.6,
+   "geo": 37.4
+  },
+  {
+   "date": "2021-10-31",
+   "atlas": 69.2,
+   "ruw": 74.7,
+   "credit": 76.8,
+   "valuation": 85.3,
+   "monetary": 55.1,
+   "behavior": 96.6,
+   "geo": 54.4
+  },
+  {
+   "date": "2021-11-30",
+   "atlas": 69.4,
+   "ruw": 74.9,
+   "credit": 74.8,
+   "valuation": 85.5,
+   "monetary": 57.6,
+   "behavior": 96.6,
+   "geo": 47.2
+  },
+  {
+   "date": "2021-12-31",
+   "atlas": 69.7,
+   "ruw": 74.9,
+   "credit": 76.2,
+   "valuation": 87.1,
+   "monetary": 55.8,
+   "behavior": 97.0,
+   "geo": 41.7
+  },
+  {
+   "date": "2022-01-31",
+   "atlas": 69.1,
+   "ruw": 74.7,
+   "credit": 74.5,
+   "valuation": 87.3,
+   "monetary": 52.9,
+   "behavior": 97.0,
+   "geo": 25.1
+  },
+  {
+   "date": "2022-02-28",
+   "atlas": 68.7,
+   "ruw": 74.6,
+   "credit": 72.4,
+   "valuation": 87.2,
+   "monetary": 54.8,
+   "behavior": 97.0,
+   "geo": 29.6
+  },
+  {
+   "date": "2022-03-31",
+   "atlas": 68.5,
+   "ruw": 74.5,
+   "credit": 71.6,
+   "valuation": 85.6,
+   "monetary": 46.9,
+   "behavior": 94.5,
+   "geo": 61.6
+  },
+  {
+   "date": "2022-04-30",
+   "atlas": 67.0,
+   "ruw": 73.8,
+   "credit": 70.0,
+   "valuation": 86.4,
+   "monetary": 41.2,
+   "behavior": 94.5,
+   "geo": 4.2
+  },
+  {
+   "date": "2022-05-31",
+   "atlas": 66.7,
+   "ruw": 73.6,
+   "credit": 68.3,
+   "valuation": 85.3,
+   "monetary": 49.2,
+   "behavior": 94.5,
+   "geo": 67.7
+  },
+  {
+   "date": "2022-06-30",
+   "atlas": 64.7,
+   "ruw": 73.1,
+   "credit": 69.0,
+   "valuation": 78.6,
+   "monetary": 60.0,
+   "behavior": 82.6,
+   "geo": 32.5
+  },
+  {
+   "date": "2022-07-31",
+   "atlas": 64.5,
+   "ruw": 72.9,
+   "credit": 68.8,
+   "valuation": 78.3,
+   "monetary": 84.3,
+   "behavior": 82.6,
+   "geo": 46.9
+  },
+  {
+   "date": "2022-08-31",
+   "atlas": 64.5,
+   "ruw": 72.9,
+   "credit": 68.2,
+   "valuation": 79.2,
+   "monetary": 85.6,
+   "behavior": 82.6,
+   "geo": 44.2
+  },
+  {
+   "date": "2022-09-30",
+   "atlas": 64.0,
+   "ruw": 72.4,
+   "credit": 67.5,
+   "valuation": 76.8,
+   "monetary": 78.3,
+   "behavior": 77.0,
+   "geo": 23.4
+  },
+  {
+   "date": "2022-10-31",
+   "atlas": 63.5,
+   "ruw": 72.1,
+   "credit": 67.4,
+   "valuation": 76.7,
+   "monetary": 93.2,
+   "behavior": 77.0,
+   "geo": 31.8
+  },
+  {
+   "date": "2022-11-30",
+   "atlas": 64.0,
+   "ruw": 72.3,
+   "credit": 67.3,
+   "valuation": 77.3,
+   "monetary": 99.7,
+   "behavior": 77.0,
+   "geo": 58.6
+  },
+  {
+   "date": "2022-12-31",
+   "atlas": 63.0,
+   "ruw": 71.9,
+   "credit": 66.4,
+   "valuation": 76.2,
+   "monetary": 99.0,
+   "behavior": 62.1,
+   "geo": 31.5
+  },
+  {
+   "date": "2023-01-31",
+   "atlas": 62.9,
+   "ruw": 71.8,
+   "credit": 66.4,
+   "valuation": 76.1,
+   "monetary": 100.0,
+   "behavior": 62.1,
+   "geo": 33.0
+  },
+  {
+   "date": "2023-02-28",
+   "atlas": 63.0,
+   "ruw": 71.9,
+   "credit": 66.4,
+   "valuation": 76.7,
+   "monetary": 99.9,
+   "behavior": 62.1,
+   "geo": 59.2
+  },
+  {
+   "date": "2023-03-31",
+   "atlas": 62.4,
+   "ruw": 71.6,
+   "credit": 63.2,
+   "valuation": 76.3,
+   "monetary": 100.0,
+   "behavior": 59.0,
+   "geo": 37.0
+  },
+  {
+   "date": "2023-04-30",
+   "atlas": 62.8,
+   "ruw": 71.8,
+   "credit": 63.1,
+   "valuation": 76.5,
+   "monetary": 100.0,
+   "behavior": 59.0,
+   "geo": 18.6
+  },
+  {
+   "date": "2023-05-31",
+   "atlas": 61.5,
+   "ruw": 71.2,
+   "credit": 63.4,
+   "valuation": 76.6,
+   "monetary": 100.0,
+   "behavior": 59.0,
+   "geo": 7.3
+  },
+  {
+   "date": "2023-06-30",
+   "atlas": 62.4,
+   "ruw": 71.6,
+   "credit": 62.0,
+   "valuation": 79.6,
+   "monetary": 99.7,
+   "behavior": 62.2,
+   "geo": 56.3
+  },
+  {
+   "date": "2023-07-31",
+   "atlas": 61.9,
+   "ruw": 71.5,
+   "credit": 62.0,
+   "valuation": 80.4,
+   "monetary": 99.5,
+   "behavior": 62.2,
+   "geo": 63.7
+  },
+  {
+   "date": "2023-08-31",
+   "atlas": 61.3,
+   "ruw": 71.2,
+   "credit": 61.9,
+   "valuation": 80.5,
+   "monetary": 99.2,
+   "behavior": 62.2,
+   "geo": 30.4
+  },
+  {
+   "date": "2023-09-30",
+   "atlas": 61.7,
+   "ruw": 71.4,
+   "credit": 61.8,
+   "valuation": 77.7,
+   "monetary": 98.3,
+   "behavior": 64.4,
+   "geo": 49.6
+  },
+  {
+   "date": "2023-10-31",
+   "atlas": 61.8,
+   "ruw": 71.5,
+   "credit": 62.1,
+   "valuation": 77.7,
+   "monetary": 94.6,
+   "behavior": 64.4,
+   "geo": 81.4
+  },
+  {
+   "date": "2023-11-30",
+   "atlas": 60.8,
+   "ruw": 71.0,
+   "credit": 62.5,
+   "valuation": 78.2,
+   "monetary": 98.3,
+   "behavior": 64.4,
+   "geo": 36.8
+  },
+  {
+   "date": "2023-12-31",
+   "atlas": 60.2,
+   "ruw": 70.8,
+   "credit": 61.9,
+   "valuation": 78.7,
+   "monetary": 99.1,
+   "behavior": 64.3,
+   "geo": 16.9
+  },
+  {
+   "date": "2024-01-31",
+   "atlas": 61.0,
+   "ruw": 71.1,
+   "credit": 62.5,
+   "valuation": 79.0,
+   "monetary": 99.0,
+   "behavior": 64.3,
+   "geo": 64.3
+  },
+  {
+   "date": "2024-02-29",
+   "atlas": 60.8,
+   "ruw": 71.0,
+   "credit": 62.9,
+   "valuation": 79.9,
+   "monetary": 98.1,
+   "behavior": 64.3,
+   "geo": 53.0
+  },
+  {
+   "date": "2024-03-31",
+   "atlas": 61.9,
+   "ruw": 71.4,
+   "credit": 62.8,
+   "valuation": 81.4,
+   "monetary": 98.1,
+   "behavior": 73.5,
+   "geo": 59.7
+  },
+  {
+   "date": "2024-04-30",
+   "atlas": 63.7,
+   "ruw": 71.9,
+   "credit": 63.6,
+   "valuation": 81.6,
+   "monetary": 92.1,
+   "behavior": 73.5,
+   "geo": 51.0
+  },
+  {
+   "date": "2024-05-31",
+   "atlas": 65.0,
+   "ruw": 72.7,
+   "credit": 63.7,
+   "valuation": 81.7,
+   "monetary": 94.6,
+   "behavior": 73.5,
+   "geo": 69.9
+  },
+  {
+   "date": "2024-06-30",
+   "atlas": 65.2,
+   "ruw": 72.8,
+   "credit": 63.0,
+   "valuation": 82.0,
+   "monetary": 96.3,
+   "behavior": 76.3,
+   "geo": 43.6
+  },
+  {
+   "date": "2024-07-31",
+   "atlas": 66.5,
+   "ruw": 73.2,
+   "credit": 63.2,
+   "valuation": 82.0,
+   "monetary": 97.8,
+   "behavior": 76.3,
+   "geo": 77.6
+  },
+  {
+   "date": "2024-08-31",
+   "atlas": 68.2,
+   "ruw": 73.8,
+   "credit": 64.1,
+   "valuation": 81.2,
+   "monetary": 97.6,
+   "behavior": 76.3,
+   "geo": 71.9
+  },
+  {
+   "date": "2024-09-30",
+   "atlas": 68.6,
+   "ruw": 74.0,
+   "credit": 64.6,
+   "valuation": 80.9,
+   "monetary": 92.2,
+   "behavior": 75.3,
+   "geo": 49.2
+  },
+  {
+   "date": "2024-10-31",
+   "atlas": 68.1,
+   "ruw": 73.9,
+   "credit": 64.9,
+   "valuation": 81.8,
+   "monetary": 79.8,
+   "behavior": 75.3,
+   "geo": 52.7
+  },
+  {
+   "date": "2024-11-30",
+   "atlas": 68.4,
+   "ruw": 74.0,
+   "credit": 65.3,
+   "valuation": 82.5,
+   "monetary": 80.4,
+   "behavior": 75.3,
+   "geo": 46.7
+  },
+  {
+   "date": "2024-12-31",
+   "atlas": 68.6,
+   "ruw": 74.0,
+   "credit": 60.5,
+   "valuation": 81.4,
+   "monetary": 67.9,
+   "behavior": 80.8,
+   "geo": 52.2
+  },
+  {
+   "date": "2025-01-31",
+   "atlas": 65.8,
+   "ruw": 73.2,
+   "credit": 60.4,
+   "valuation": 81.4,
+   "monetary": 65.9,
+   "behavior": 80.8,
+   "geo": 0.6
+  },
+  {
+   "date": "2025-02-28",
+   "atlas": 64.3,
+   "ruw": 72.6,
+   "credit": 60.5,
+   "valuation": 81.2,
+   "monetary": 73.7,
+   "behavior": 80.8,
+   "geo": 1.5
+  },
+  {
+   "date": "2025-03-31",
+   "atlas": 61.9,
+   "ruw": 71.6,
+   "credit": 59.6,
+   "valuation": 77.3,
+   "monetary": 73.8,
+   "behavior": 76.3,
+   "geo": 1.0
+  },
+  {
+   "date": "2025-04-30",
+   "atlas": 59.0,
+   "ruw": 70.8,
+   "credit": 60.2,
+   "valuation": 76.5,
+   "monetary": 74.8,
+   "behavior": 76.3,
+   "geo": 1.1
+  },
+  {
+   "date": "2025-05-31",
+   "atlas": 56.5,
+   "ruw": 69.7,
+   "credit": 60.1,
+   "valuation": 77.6,
+   "monetary": 70.7,
+   "behavior": 76.3,
+   "geo": 1.8
+  },
+  {
+   "date": "2025-06-30",
+   "atlas": 54.9,
+   "ruw": 68.9,
+   "credit": 59.3,
+   "valuation": 79.1,
+   "monetary": 75.2,
+   "behavior": 81.7,
+   "geo": 0.8
+  },
+  {
+   "date": "2025-07-31",
+   "atlas": 51.9,
+   "ruw": 67.8,
+   "credit": 59.6,
+   "valuation": 79.6,
+   "monetary": 71.9,
+   "behavior": 81.7,
+   "geo": 2.0
+  },
+  {
+   "date": "2025-08-31",
+   "atlas": 50.4,
+   "ruw": 66.8,
+   "credit": 59.2,
+   "valuation": 79.6,
+   "monetary": 71.2,
+   "behavior": 81.7,
+   "geo": 4.5
+  },
+  {
+   "date": "2025-09-30",
+   "atlas": 49.5,
+   "ruw": 66.0,
+   "credit": 59.1,
+   "valuation": 79.7,
+   "monetary": 67.5,
+   "behavior": 87.8,
+   "geo": 2.0
+  },
+  {
+   "date": "2025-10-31",
+   "atlas": 48.3,
+   "ruw": 65.4,
+   "credit": 59.1,
+   "valuation": 79.7,
+   "monetary": 65.2,
+   "behavior": 87.8,
+   "geo": 1.8
+  },
+  {
+   "date": "2025-11-30",
+   "atlas": 47.1,
+   "ruw": 64.9,
+   "credit": 59.4,
+   "valuation": 79.8,
+   "monetary": 67.4,
+   "behavior": 87.8,
+   "geo": 7.2
+  },
+  {
+   "date": "2025-12-31",
+   "atlas": 46.1,
+   "ruw": 64.5,
+   "credit": 59.5,
+   "valuation": 79.0,
+   "monetary": 59.9,
+   "behavior": 91.4,
+   "geo": 9.6
+  },
+  {
+   "date": "2026-01-31",
+   "atlas": 46.2,
+   "ruw": 64.7,
+   "credit": 60.0,
+   "valuation": 79.1,
+   "monetary": 58.4,
+   "behavior": 91.4,
+   "geo": 21.9
+  },
+  {
+   "date": "2026-02-28",
+   "atlas": 47.9,
+   "ruw": 65.0,
+   "credit": 61.0,
+   "valuation": 78.7,
+   "monetary": 63.9,
+   "behavior": 91.4,
+   "geo": 44.8
+  },
+  {
+   "date": "2026-03-31",
+   "atlas": 47.7,
+   "ruw": 65.0,
+   "credit": 60.1,
+   "valuation": 75.8,
+   "monetary": 58.1,
+   "behavior": 88.8,
+   "geo": 2.8
+  },
+  {
+   "date": "2026-04-30",
+   "atlas": 46.9,
+   "ruw": 64.8,
+   "credit": 59.4,
+   "valuation": 76.3,
+   "monetary": 55.3,
+   "behavior": 88.8,
+   "geo": 2.9
+  },
+  {
+   "date": "2026-05-31",
+   "atlas": 46.7,
+   "ruw": 64.8,
+   "credit": 60.0,
+   "valuation": 77.1,
+   "monetary": 54.7,
+   "behavior": 88.8,
+   "geo": 3.0
+  },
+  {
+   "date": "2026-06-30",
+   "atlas": 46.1,
+   "ruw": 64.7,
+   "credit": 60.0,
+   "valuation": 77.2,
+   "monetary": 59.2,
+   "behavior": 88.8,
+   "geo": 8.3
+  },
+  {
+   "date": "2026-07-31",
+   "atlas": 45.5,
+   "ruw": 63.9,
+   "credit": 38.4,
+   "valuation": 77.2,
+   "monetary": 55.3,
+   "behavior": 88.8,
+   "geo": 3.6
+  }
+ ],
+ "peaks": [
+  {
+   "date": "1929-09",
+   "label": "Grote Crash"
+  },
+  {
+   "date": "1937-03",
+   "label": "Recessie van 1937"
+  },
+  {
+   "date": "1973-01",
+   "label": "Nifty Fifty / oliecrisis"
+  },
+  {
+   "date": "1987-08",
+   "label": "Black Monday"
+  },
+  {
+   "date": "2000-03",
+   "label": "Dotcom"
+  },
+  {
+   "date": "2007-10",
+   "label": "Kredietcrisis"
+  },
+  {
+   "date": "2022-01",
+   "label": "Rente/inflatie-reset"
+  },
+  {
+   "date": "2020-02",
+   "label": "COVID (exogeen - niet meegeteld in AUC)",
+   "exogenous": true
+  }
+ ],
+ "regimes": [
+  {
+   "max": 40,
+   "label": "EXPANSIE"
+  },
+  {
+   "max": 60,
+   "label": "LATE CYCLE"
+  },
+  {
+   "max": 80,
+   "label": "FRAGIEL"
+  },
+  {
+   "max": 101,
+   "label": "KRITIEK"
+  }
+ ]
+}
